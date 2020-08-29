@@ -1,7 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
-.font-md{
-    font-size: 15px;
+body {
+  overflow-x: hidden;
 }
-.text-orange{
-    color: #ffa230;
+
+/*font Style */
+.font-md {
+  font-size: 15px;
 }
+.text-orange {
+  color: #ffa230;
+}
+.font-lg {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+/*Buttons Style */
+.blur-btn {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 3px;
+}
+.btn-primaryOrange {
+  background: #ffa230;
+  box-shadow: 0px 4px 15px rgba(62, 62, 62, 0.25);
+  border-radius: 4px;
+}
+.btn-gradientActive {
+  background: linear-gradient(180deg, #ffa230 0%, #ffeacf 100%);
+  box-shadow: 0px 4px 15px rgba(75, 75, 75, 0.25);
+  border-radius: 4px;
+}
+.btn-gradientDisable {
+    background: linear-gradient(180deg, #ffa230 0%, #ffeacf 100%);
+    box-shadow: 0px 4px 15px rgba(75, 75, 75, 0.25);
+    border-radius: 4px;
+  }
