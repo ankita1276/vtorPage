@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ecommerce.component.scss']
 })
 export class EcommerceComponent implements OnInit {
+  footerEmail: any;
+  footerName: any;
+  footerNumber: any;
   content = {
     "bgImage": 'ecommerce',
     "title": 'Multi-Vendor Ecommerce',

@@ -56,6 +56,22 @@ body {
   box-shadow: 0px 4px 15px rgba(75, 75, 75, 0.25);
   border-radius: 4px;
 }
+/* Input fields*/
+.footerFields{
+  margin:0px 10px;
+  ::placeholder {
+      color:#FFA230;
+  }
+  input{
+      width: 100%;
+      padding:10px 15px;
+      border: none;
+      background: rgba(255, 162, 48, 0.19) !important;
+      backdrop-filter: blur(15px);
+      color:#FFA230;
+      border-radius: 4px
+  }
+}
 
 /* Media Query */
 /* For 640 Resolution */
