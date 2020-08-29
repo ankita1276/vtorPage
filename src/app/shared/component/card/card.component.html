@@ -1,7 +1,14 @@
-<div class="cardBox" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="row mt-3">
+<ng-container *ngFor="let cardData of cardContent">
+  <div class="col-md-4 col-sm-12 mb-5">
+    <div class="cardBox p-4">
+      <p class="font-md  font-weight-bold">{{ cardData.title }}</p>
+      <p class="font-md ">
+        {{ cardData.paragraph }}
+      </p>
     </div>
   </div>
+</ng-container>
+</div>
+
+

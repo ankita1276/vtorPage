@@ -3,23 +3,28 @@ body {
   overflow-x: hidden;
 }
 
-.actionCard{
+.actionCard {
   border: 2px solid #ffa230;
   box-sizing: border-box;
   border-radius: 4px;
 }
-.containerBox{
-  background: linear-gradient(180deg, #FFEACF 0%, #FFFFFF 100%);
-  padding:3rem 6rem;
+.containerBox {
+  background: linear-gradient(180deg, #ffeacf 0%, #ffffff 100%);
+  padding: 3rem 6rem;
 }
-.orangeline{
+.orangeline {
   border: 3px solid rgba(255, 162, 48, 0.19);
   margin: 25px 0px 30px 0px;
 }
 
 /*font Style */
+.font-sm {
+  font-size: 14px;
+  line-height: 21px;
+}
 .font-md {
   font-size: 15px;
+  line-height: 21px;
 }
 .text-orange {
   color: #ffa230;
@@ -46,7 +51,15 @@ body {
   border-radius: 4px;
 }
 .btn-gradientDisable {
-    background: linear-gradient(180deg, #ffa230 0%, #ffeacf 100%);
-    box-shadow: 0px 4px 15px rgba(75, 75, 75, 0.25);
-    border-radius: 4px;
+  background: linear-gradient(180deg, #ffa230 0%, #ffeacf 100%);
+  box-shadow: 0px 4px 15px rgba(75, 75, 75, 0.25);
+  border-radius: 4px;
+}
+
+/* Media Query */
+/* For 640 Resolution */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .containerBox {
+    padding: 2rem;
   }
+}
