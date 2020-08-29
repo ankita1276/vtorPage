@@ -21,16 +21,22 @@ export class EcommerceComponent implements OnInit {
   cardContent = [{
     "title": 'Administered Order Management System',
     "paragraph": 'If you do not want to directly map your customer orders to the vendors and select a vendor to assign a specific item out of the list of vendors who can carter the order. We have this feature covered for you.'
-  }, {
-    "title": 'Service area wise product catalogue and pricing management',
-    "paragraph": 'Create your own virtual geography using pincodes while defining'
-  }, {
-    "title": 'Mobile friendly Website and Mobile Application for your Buyers',
-    "paragraph": 'Create your own virtual geography using pincodes while defining'
-  }, {
-    "title": 'Cross-Platform Mobile App for Vendors to maintain product catalogues and orders',
-    "paragraph": 'Create your own virtual geography using pincodes while defining'
-  }]
+    }, {
+      "title": 'Service area wise product catalogue and pricing management',
+      "paragraph": 'Create your own virtual geography using pincodes while defining'
+    }, {
+      "title": 'Mobile friendly Website and Mobile Application for your Buyers',
+      "paragraph": 'Create your own virtual geography using pincodes while defining'
+    }, {
+      "title": 'Cross-Platform Mobile App for Vendors to maintain product catalogues and orders',
+      "paragraph": 'Create your own virtual geography using pincodes while defining'
+    }, {
+      "title": "Cross-Platform Mobile App for delivery partners",
+      "paragraph": 'Create your own virtual geography using pincodes while defining '
+    }, {
+      "title": "Suppier verification and ratings system and detailed dashboarding",
+      "paragraph": 'Create your own virtual geography using pincodes while defining  '
+    }]
   constructor() { }
 
   ngOnInit(): void {

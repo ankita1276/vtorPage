@@ -1,0 +1,29 @@
+.form-container{
+    width: 400px;
+    .form-title{
+        padding:5px 15px;
+        font-size:18x;
+        line-height:27px;
+        color:white;
+    }
+.inputField{
+    margin:20px 0px;
+    ::placeholder {
+        color:white;
+    }
+    input{
+        width: 100%;
+        border: none;
+        padding:10px 15px;
+        color:white;
+        font-size:14px;
+        line-height:21px;
+    }
+}
+.book-btn{
+    width:100%;
+    background: linear-gradient(180deg, #FFA230 0%, #FFEACF 100%);
+    box-shadow: 5px 4px 30px rgba(217, 125, 14, 0.52);
+    border-radius: 4px;
+}
+}

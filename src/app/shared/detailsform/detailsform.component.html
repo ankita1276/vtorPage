@@ -1,0 +1,36 @@
+<div class="form-container">
+  <div class="blur-btn form-title d-flex justify-content-center">
+    <p class="mb-0">Want to know what we have to offer?<br><span class="pl-3">Book a demo now,<b> ITS FREE!</b> </span></p>
+  </div>
+  <div class="blur-btn inputField">
+    <input
+      type="text"
+      [placeholder]="'Name'"
+      class="blur-btn"
+      id="name"
+      [(ngModel)]="name"
+      name="alterEgo"
+    />
+  </div>
+  <div class="blur-btn inputField">
+    <input
+      type="text"
+      [placeholder]="'Email'"
+      class="blur-btn"
+      id="email"
+      [(ngModel)]="email"
+      name="email"
+    />
+  </div>
+  <div class="blur-btn inputField">
+    <input
+      type="text"
+      [placeholder]="'Phone Number'"
+      class="blur-btn"
+      id="number"
+      [(ngModel)]="number"
+      name="number"
+    />
+  </div>
+  <button class="btn book-btn font-lg text-dark font-weight-bold"(click)="submit()">BOOK A FREE DEMO</button>
+</div>

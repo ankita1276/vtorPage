@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import {CardComponent} from './component/card/card.component';
 import { HeaderComponent} from './component/header/header.component';
 import { BannerComponent } from './component/banner/banner.component';
+import { DetailsformComponent } from './detailsform/detailsform.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [CardComponent, HeaderComponent, BannerComponent],
+  declarations: [CardComponent, HeaderComponent, BannerComponent, DetailsformComponent],
   imports: [
-    CommonModule
+    CommonModule, FormsModule
   ],
-  exports: [CardComponent, HeaderComponent,BannerComponent]
+  exports: [CardComponent, HeaderComponent, BannerComponent]
 })
 export class SharedModule { }
