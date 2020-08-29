@@ -3,6 +3,20 @@ body {
   overflow-x: hidden;
 }
 
+.actionCard{
+  border: 2px solid #ffa230;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.containerBox{
+  background: linear-gradient(180deg, #FFEACF 0%, #FFFFFF 100%);
+  padding:3rem 6rem;
+}
+.orangeline{
+  border: 3px solid rgba(255, 162, 48, 0.19);
+  margin: 25px 0px 30px 0px;
+}
+
 /*font Style */
 .font-md {
   font-size: 15px;

@@ -11,6 +11,7 @@ export class NightOwlerComponent implements OnInit {
     "title": 'The Nightowlers',
     'subTitle': 'One Stop Solution for all your freelancing needs. We are revolutionalizing how Freelancing works in India.',
     "subQuestion": 'Wanna Know How ?',
+    "getDetailsForm": false,
     "button": [
       {
         "title" : 'Visit Website',
