@@ -1,10 +1,17 @@
-<div class="Banner-Cotainer row">
-    <div class="col-md-6 d-flex flex-column justify-content-end align-items-start">
-        <h1 class="text-orange">Multi-Vendor Ecommerce</h1>
-        <h6 class="text-white font-lg">Plug & Play Multi-Vendor online store with 24*7 Tech Support. So, you can focus on business while we take care of your store.</h6>
-        <button type="button" class="btn btn-sm font-weight-bold text-white px-4 py-2 my-3 blur-btn font-lg">Read More</button>
+<div class="Banner-Cotainer row {{content.bgImage}}">
+  <div class="col-md-6 d-flex flex-column justify-content-end align-items-start">
+    <h1 class="text-orange">{{ content.title }}</h1>
+    <h6 class="text-white font-lg">{{ content.subTitle }}</h6>
+    <h6 *ngIf="content.subQuestion" class="text-white font-lg font-weight-bold">{{content.subQuestion}}</h6>
+    <div class="d-flex">
+      <ng-container *ngFor="let btn of content.button">
+        <button
+          type="button"
+          class="btn btn-sm font-weight-bold text-white px-5 mr-3 py-2 my-3 {{btn.style}} font-lg">
+          {{ btn.title }}
+        </button>
+      </ng-container>
     </div>
-    <div class="col-md-6">
-        
-    </div>
+  </div>
+  <div class="col-md-6"></div>
 </div>
