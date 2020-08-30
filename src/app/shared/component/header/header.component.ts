@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -8,20 +9,18 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   show: boolean = true;
+  selectedItem: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private viewportScroller: ViewportScroller) { }
 
   ngOnInit(): void {
-
-    console.log(this.router.url,"(this.router.url");
-    
-    // if (this.router.url === '/') {
-    //   this.show = true;
-    // }
   }
-  onClick(href){
-    console.log(href,"href");
+  onClick(elementId: string){
+    console.log(this.router.url,"head");
     
+    this.selectedItem = elementId;
+    console.log(this.selectedItem );
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ecommerce',
@@ -40,11 +41,12 @@ export class EcommerceComponent implements OnInit {
       "title": "Suppier verification and ratings system and detailed dashboarding",
       "paragraph": 'Create your own virtual geography using pincodes while defining  '
     }]
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     console.log(this.cardContent,"cardContent");
-    
+    window.scrollTo(0, 0);
+    console.log(this.router.url); 
   }
 
 }

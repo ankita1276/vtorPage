@@ -11,6 +11,7 @@ export class HomePageComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    console.log(this.router.url); 
   }
   submit(){
     console.log(this.email,"homeee");

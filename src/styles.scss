@@ -2,7 +2,9 @@
 body {
   overflow-x: hidden;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .actionCard {
   border: 2px solid #ffa230;
   box-sizing: border-box;

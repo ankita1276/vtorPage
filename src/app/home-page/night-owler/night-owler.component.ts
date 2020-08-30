@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-night-owler',
@@ -23,11 +24,12 @@ export class NightOwlerComponent implements OnInit {
       }
     ]
   };
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    console.log(this.router.url); 
     console.log(this.content,"sending");
-    
+    window.scrollTo(0, 0);
   }
 
 }
