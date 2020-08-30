@@ -1,0 +1,160 @@
+.mainBackground{
+    background: #f8f8f7;
+    //background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
+}
+.containerBackground{
+     background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
+     padding: 10rem 10rem 0rem 10rem;
+}
+.home-container {
+  padding: 0rem 10rem 3rem 10rem;
+}
+  .enquiry{
+      .part1  {
+        position: absolute;
+        left: 779px;
+        top: 148.82px;
+      }
+      .vector{
+        position: absolute;
+        width: 112.58px;
+        height: 97.03px;
+        left: 731.63px;
+        top: 105.01px;
+        z-index: 2;
+      }
+      .darkVector{
+        position: absolute;
+        width: 136px;
+        height: 136.12px;
+        left: 711.63px;
+        top: 131.67px;
+        z-index: 1;
+      }
+      .bigVector{
+        position: absolute;
+        width: 368.2px;
+        height: 366.51px;
+        left: 917.13px;
+        top: 302.59px;
+      }
+      .bigDarkVector{
+        position: absolute;
+        left: 801.85px;
+        top: 439.62px;
+      }
+      .productVector{
+        position: absolute;
+        width: 448.59px;
+        height:  451.61px;
+        left: 72.62px;
+        top: 919.61px;    
+      }
+      .darkProductVector{
+        position: absolute;
+        left: 152.5px;
+        top: 965px;
+      }
+    }
+  .fontxl {
+    font-size: 48px;
+    line-height: 72px;
+  }
+  .email-id{
+    background: rgba(255, 255, 255, 0.38);
+    box-shadow: 4px 5px 30px rgba(219, 219, 219, 0.25);
+    backdrop-filter: blur(25px);
+    padding: 16px;
+    border-radius: 5px;
+    ::placeholder {
+        color:#C1C1C1;
+    }
+    
+      input{
+        width: 100%;
+        padding: 1.5rem;
+        border:none;
+      }
+  }
+  .dropdown{
+    background: rgba(255, 162, 48, 0.26);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 16px;
+    .btn-dropdown{
+        background: #FFEACF;
+        background: #FFEACF;
+        border-radius: 5px;
+        width: 55%;
+        padding: 1.5rem;
+        margin-right: 1.5rem;
+}
+    .orange-btn{
+        background: #ffa230;
+        border-radius: 5px;
+        width:40%;
+        padding: 1.5rem;
+    }
+  }
+  .product{
+      margin-top: 20rem;
+      .knowMoreCard{
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding:15px;
+        height: 205px;
+        border: 1px solid lightgrey;
+        //width: 280px;
+        .content{
+            height: 105px;
+        }
+        .btn-grey{
+          background: linear-gradient(180deg, #FFA230 0%, #FFEACF 100%);
+           // background: linear-gradient(180deg, #9C9C9C 0%, #E6E6E6 100%);
+            border-radius: 4px;
+        }
+      }
+  }
+  .clients{
+      .backgroundImg{
+        background: url("../../assets/theatre.jpg");
+        height: 330px;
+      }
+      .clientBox{
+        width: 100px;
+        height: 100px;
+        left: 880px;
+        top: 2146px;
+        background: rgba(255, 162, 48, 0.7);
+        border-radius: 4px;
+        margin-bottom: 2rem;
+      }
+  }
+
+.team{
+    background: linear-gradient(to bottom,#f8f8f8 0%,#ffeacf 100%);
+    .teamBox{
+        padding: 0rem 10rem;
+        .teamImg{
+            // background: linear-gradient(to bottom, #333, #333 60%, #eee 75%)
+            // background-image: linear-gradient(red, yellow);
+            //height: 300px;
+          }
+    }
+     
+  }
+  .nameBox{
+    // position: absolute;
+     width: 30px;
+     height: 30px;
+    // left: 481px;
+    // top: 2959px;
+     background: #FFEACF;
+     border: 1px solid #FFA230;
+     box-sizing: border-box;
+     border-radius: 4px;
+     margin:0px 5px;
+   }
+   .font-strong{
+       font-weight: 500;
+   }

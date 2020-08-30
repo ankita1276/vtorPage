@@ -29,6 +29,9 @@ body {
 .text-orange {
   color: #ffa230;
 }
+.text-grey {
+  color: #8B8B8B;
+}
 .font-lg {
   line-height: 27px;
   font-size: 18px;
@@ -72,6 +75,10 @@ body {
       border-radius: 4px
   }
 }
+.orange-gradient{
+  background: linear-gradient(180deg, #ffeacf 0%, #ffffff 100%);
+}
+
 
 /* Media Query */
 /* For 640 Resolution */

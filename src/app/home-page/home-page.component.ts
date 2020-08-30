@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
+  email:any;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  submit(){
+    console.log(this.email,"homeee");
+    
   }
 
 }
