@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {ComponentService} from '../../shared/service/component.service';
 
 @Component({
   selector: 'app-ecommerce',
@@ -41,11 +42,12 @@ export class EcommerceComponent implements OnInit {
       "title": "Suppier verification and ratings system and detailed dashboarding",
       "paragraph": 'Create your own virtual geography using pincodes while defining  '
     }]
-  constructor(private router: Router) { }
+  constructor(private router: Router, private service: ComponentService) { }
 
   ngOnInit(): void {
     console.log(this.cardContent,"cardContent");
     window.scrollTo(0, 0);
+    this.service.setShowHeader(false);
     console.log(this.router.url); 
   }
 

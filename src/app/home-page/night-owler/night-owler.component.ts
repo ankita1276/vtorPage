@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ComponentService } from 'src/app/shared/service/component.service';
 
 @Component({
   selector: 'app-night-owler',
@@ -24,11 +25,12 @@ export class NightOwlerComponent implements OnInit {
       }
     ]
   };
-  constructor(private router: Router) { }
+  constructor(private router: Router, private service: ComponentService) { }
 
   ngOnInit(): void {
     console.log(this.router.url); 
     console.log(this.content,"sending");
+    this.service.setShowHeader(false);
     window.scrollTo(0, 0);
   }
 
