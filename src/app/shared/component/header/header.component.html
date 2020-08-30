@@ -1,22 +1,22 @@
 <nav class="navbar sticky-top bg-white px-5 my-2 py-0">
     <!-- Navbar content -->
-    <a class="navbar-brand font-weight-bold font-md d-flex align-items-center text-dark" href="#">
+    <a class="navbar-brand font-weight-bold font-md d-flex align-items-center text-dark ml-5" href="#">
         <img src="./assets/logo.png" width="65" height="60" class="d-inline-block align-top mx-2 mr-3" alt="">
         <span class="pl-3" style="border-left: 2px solid black">Vision to Reality Labs</span>
     </a>
     <div class="d-flex mr-5">
-    <ul class="navbar-nav flex-row py-2">
-        <li class="nav-item px-4">
-          <a class="nav-link px-2 text-dark" href="#">Home</a>
+    <ul class="navbar-nav flex-row py-2" *ngIf="show">
+        <li class="nav-item px-4" (click)="onClick('home')">
+          <a class="nav-link px-2 text-dark">Home</a>
         </li>
-        <li class="nav-item px-4">
-          <a class="nav-link px-2 text-dark" href="#">Products</a>
+        <li class="nav-item px-4"  (click)="onClick('product')">
+          <a class="nav-link px-2 text-dark">Products</a>
         </li>
-        <li class="nav-item px-4">
-          <a class="nav-link px-2 text-dark" href="#">Clients</a>
+        <li class="nav-item px-4"  (click)="onClick('client')">
+          <a class="nav-link px-2 text-dark">Clients</a>
         </li>
-        <li class="nav-item px-4">
-            <a class="nav-link px-2 text-dark" href="#">Team</a>
+        <li class="nav-item px-4" (click)="onClick('team')">
+            <a class="nav-link px-2 text-dark">Team</a>
           </li>
       </ul>
       <button type="button" class="btn btn-main btn-sm font-weight-bold font-md px-5 mx-2">Contact us</button>

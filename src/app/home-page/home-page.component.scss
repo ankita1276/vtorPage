@@ -130,6 +130,42 @@
         margin-bottom: 2rem;
       }
   }
+  .howWork{
+    
+    .workBox{
+      z-index: 1;
+      border-top: 2px solid white;
+    height: 72px;
+    width: 279px;
+    color: white;
+    font-weight: 500;
+    background: linear-gradient(0deg, #FFA230, #FFA230);
+    box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
+    border-radius: 5px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    .line1{
+      position: absolute;
+      width: 837px;
+      height: 1px;
+      left: 15px;
+      top: 88px;
+    }
+    .line2{
+      position: absolute;
+      width: 837px;
+      height: 1px;
+      left: 15px;
+      top: 206px;
+    }
+    .line3{
+      position: absolute;
+      left: 852px;
+      top: 73px;
+    }
+  }
 
 .team{
     background: linear-gradient(to bottom,#f8f8f8 0%,#ffeacf 100%);
@@ -158,3 +194,93 @@
    .font-strong{
        font-weight: 500;
    }
+   .workContainer{
+    background: #FFEACF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   h2.strikeLine {
+    position: relative;
+    z-index: 1;
+    &:before {
+      border-top: 10px solid #ffa230;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 62%;
+      left: -200px;
+      right: 0;
+      bottom: 0;
+      width: 34%;
+      z-index: -1;
+    }
+  }
+  h2.strikeLineTeam{
+    position: relative;
+    z-index: 1;
+    &:before {
+      border-top: 10px solid #ffa230;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 62%;
+      left: -88%;
+      right: 0;
+      bottom: 0;
+      width: 8%;
+      z-index: -1;
+    }
+  }
+  h2.strikeLineProduct{
+    position: relative;
+    z-index: 1;
+    &:before {
+      border-top: 10px solid #ffa230;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 62%;
+      left: -200px;
+      right: 0;
+      bottom: 0;
+      width: 34%;
+      z-index: -1;
+    }
+  }
+  h2.strikeLineWork{
+    position: relative;
+    z-index: 1;
+    &:before {
+      border-top: 10px solid #ffa230;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 62%;
+      left: -79%;
+      right: 0;
+      bottom: 0;
+      width: 17%;
+      z-index: -1;
+    }
+  }
+  h2.strikeLineClient{
+    position: relative;
+    z-index: 1;
+    &:before {
+      border-top: 10px solid #ffa230;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 62%;
+      left: -88%;
+      right: 0;
+      bottom: 0;
+      width: 9%;
+      z-index: -1;    
+    }
+  }
+  .orange-gradient{
+    box-shadow: 5px 5px 30px rgba(106, 106, 106, 0.22);
+  }
+

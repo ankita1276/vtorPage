@@ -7,11 +7,6 @@ import { EcommerceComponent } from './ecommerce/ecommerce.component';
 
 const routes: Routes = [
     {
-        path: '',
-        pathMatch: 'full',
-        component: HomePageComponent
-    },
-    {
         path: 'nightOwler',
         component: NightOwlerComponent
     },

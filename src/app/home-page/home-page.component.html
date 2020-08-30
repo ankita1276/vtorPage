@@ -56,7 +56,7 @@
     <div class="row product">
         <div class="col-md-4 d-flex align-items-center">
             <div class="textbox">
-                <h2 class="mb-3">Products</h2>
+                <h2 class="mb-3 strikeLineProduct">Products</h2>
                 <p class="mb-0 text-grey font-md">We believe every great idea cannot be great until its implemented right</p>
             </div>
         </div>
@@ -65,7 +65,7 @@
                 <p class="title font-md mb-1 font-weight-bold">The Nightowlers</p>
                 <p class="content font-md text-center text-grey mb-0 ">We are revolutionalizing how Freelancing works in India.
                     Single Stop Shop for all your freelancing needs. </p>
-                <button type="button" class="btn btn-grey">
+                <button type="button" (click)="btnRoute('/home/nightOwler')" class="btn btn-grey">
                     Know More
                 </button>
            
@@ -73,7 +73,7 @@
         <div class="col-md-3 knowMoreCard d-flex align-items-center flex-column mx-3 my-3">
                 <p class="title font-md mb-1 font-weight-bold">Multi-Vendor Ecommerce</p>
                 <p class="content font-md text-center text-grey mb-0 ">Plug & Play Multi-Vendor online store with 24*7 Tech Support. So, you can focus on business while we take care of your store.</p>
-                <button type="button" class="btn btn-grey">
+                <button type="button"  (click)="btnRoute('/home/e-commerce')" class="btn btn-grey">
                     Know More
                 </button>  
         </div>
@@ -99,15 +99,32 @@
 
     </div>
 </div>
-<div class="home-container">
+<div class="home-container workContainer">
     <div class="row howWork my-5">
-        <h2 class="mb-3 col-lg-12">How we work</h2>
+        <h2 class="mb-3 col-lg-12 strikeLineWork">How we work</h2>
         <p class="col-lg-11 font-md">We follow a unique way of approaching problems and implementing solutions. We believe that anything which doesn't provide value to the business is a waste of both time and efforts. We understand and brainstorm enough before we start executing any solution.</p>
+        <div class="col-12 d-flex align-items-center flex-column">
+            <img src="../../assets/Line 1.png" class="img-fluid line1" alt="Responsive image">
+            <img src="../../assets/Line 1.png" class="img-fluid line2" alt="Responsive image">
+            <img src="../../assets/Line 3.png" class="img-fluid line3" alt="Responsive image">
+            <div class="row mt-5">
+                <div class="workBox mx-3"> <img src="../../assets/bulb.png" class="img-fluid pr-2" alt="Responsive image">Vision</div>
+                 <div class="workBox mx-3"><img src="../../assets/bulb.png" class="img-fluid pr-2" alt="Responsive image">Plan</div>
+                  <div class="workBox mx-3"><img src="../../assets/bulb.png" class="img-fluid pr-2" alt="Responsive image">Design</div>
+            </div>
+            <div class="row mt-5">
+                <div class="workBox mx-3"><img src="../../assets/bulb.png" class="img-fluid pr-2" alt="Responsive image">Reality</div>
+                 <div class="workBox mx-3"><img src="../../assets/bulb.png" class="img-fluid pr-2" alt="Responsive image">Deploy</div>
+                  <div class="workBox mx-3"><img src="../../assets/bulb.png" class="img-fluid pr-2" alt="Responsive image">Execute</div>
+            </div>
+        </div>
+        
+       
     </div>
 </div>
 <div class="home-container">
     <div class="row clients my-5">
-        <h2 class="mb-3 col-lg-12">Clients</h2>
+        <h2 class="mb-3 col-lg-12 strikeLineClient">Clients</h2>
         <div class="d-flex justify-content-center">
             <div class="col-lg-7 backgroundImg d-flex justify-content-end flex-column p-5">
                 <div class="font-lg font-weight-bold text-white">The Theater Project</div>
@@ -125,7 +142,7 @@
   
 <div class="team">
     <div class="row teamBox">
-        <h2 class="mb-3 col-lg-12">Teams</h2>
+        <h2 class="mb-3 col-lg-12 strikeLineTeam">Teams</h2>
         <div class=" col-lg-12 d-flex justify-content-center">
             <img src="../../assets/Avatars.svg" class="img-fluid" alt="Responsive image">
         </div>
