@@ -5,10 +5,12 @@ import { NightOwlerComponent } from './night-owler/night-owler.component';
 import { SharedModule } from '../shared/shared.module';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
 import { FormsModule } from '@angular/forms';
+import { ELearningComponent } from './e-learning/e-learning.component';
+import { CommunityComponent } from './community/community.component';
 
 
 @NgModule({
-  declarations: [NightOwlerComponent, EcommerceComponent],
+  declarations: [NightOwlerComponent, EcommerceComponent, ELearningComponent, CommunityComponent],
   imports: [
     CommonModule,
     HomePageRoutingModule,

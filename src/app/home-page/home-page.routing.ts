@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomePageComponent} from './home-page.component';
 import { NightOwlerComponent } from './night-owler/night-owler.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { ELearningComponent } from './e-learning/e-learning.component';
+import { CommunityComponent } from './community/community.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,14 @@ const routes: Routes = [
     {
         path: 'e-commerce',
         component: EcommerceComponent
+    },
+    {
+        path: 'e-learning',
+        component: ELearningComponent
+    },
+    {
+        path: 'community',
+        component: CommunityComponent
     }
 ];
 
