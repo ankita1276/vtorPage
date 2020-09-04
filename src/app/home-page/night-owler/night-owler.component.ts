@@ -21,7 +21,7 @@ export class NightOwlerComponent implements OnInit {
       },
       {
         "title" : 'Read More',
-        "style": 'blur-btn'
+        "style": 'blury-btn'
       }
     ]
   };

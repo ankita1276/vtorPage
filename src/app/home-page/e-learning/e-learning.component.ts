@@ -20,7 +20,7 @@ export class ELearningComponent implements OnInit {
     "button": [
       {
         "title": 'Read More',
-        "style": 'blur-btn'
+        "style": 'blury-btn'
       }
     ]
   };

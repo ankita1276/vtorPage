@@ -1,7 +1,7 @@
 .Banner-Cotainer{
         background-position: right bottom, left top;
         background-repeat: no-repeat, repeat;
-        padding: 20px 60px;
+        padding: 20px 0rem 25px 7rem;
         height: 470px;
         border-bottom: 15px solid #ffa230;
 }
@@ -16,4 +16,9 @@
 }
 .elearning{
         background-image: url(../../../../assets/elearning.jpg) !important;
+}
+.blury-btn{
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(15px);
+        padding: 10px 4rem;
 }
