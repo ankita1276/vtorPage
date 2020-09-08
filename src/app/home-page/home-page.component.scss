@@ -4,25 +4,25 @@
 }
 .containerBackground{
      background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
-     padding: 10rem 7rem 0rem 13rem;
+     padding: 10rem 7rem 0rem 14%;
 }
 .home-container {
-  padding: 0rem 10rem 3rem 13rem;
+  padding: 0rem 10rem 3rem 14%;
 }
 .home-product{
-  padding: 0rem 0rem 3rem 13rem;
+  padding: 0rem 0rem 3rem 14%;
 }
   .enquiry{
       .part1  {
         position: absolute;
-        left: 779px;
+        left: 57%;
         top: 148.82px;
       }
       .vector{
         position: absolute;
         width: 112.58px;
         height: 97.03px;
-        left: 731.63px;
+        left: 53%;
         top: 105.01px;
         z-index: 2;
       }
@@ -30,7 +30,7 @@
         position: absolute;
         width: 136px;
         height: 136.12px;
-        left: 711.63px;
+        left: 53%;
         top: 131.67px;
         z-index: 1;
       }
@@ -38,12 +38,12 @@
         position: absolute;
         width: 368.2px;
         height: 366.51px;
-        left: 917.13px;
+        left: 68%;
         top: 302.59px;
       }
       .bigDarkVector{
         position: absolute;
-        left: 801.85px;
+        left: 61%;
         top: 439.62px;
       }
       .productVector{
@@ -112,6 +112,8 @@
         height: 215px;
         border: 1px solid lightgrey;
         z-index: 1;
+        box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
+        border-radius: 5px;
         //width: 280px;
         .content{
             height: 105px;
@@ -188,15 +190,14 @@
 
 .team{
     background: linear-gradient(to bottom,#f8f8f8 0%,#ffeacf 100%);
-    .teamBox{
-        padding: 0rem 10rem 0rem 13rem;
         .teamImg{
             // background: linear-gradient(to bottom, #333, #333 60%, #eee 75%)
             // background-image: linear-gradient(red, yellow);
             //height: 300px;
           }
-    }
-     
+  }
+  .teamBox{
+    padding: 0rem 10rem 0rem 14%;
   }
   .nameBox{
     // position: absolute;
@@ -220,7 +221,7 @@
     justify-content: center;
     clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 495px;
     left: 0px;
     top: 1522px;
