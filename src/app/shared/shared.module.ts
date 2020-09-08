@@ -5,14 +5,15 @@ import { HeaderComponent} from './component/header/header.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { DetailsformComponent } from './component/detailsform/detailsform.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './component/footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [CardComponent, HeaderComponent, BannerComponent, DetailsformComponent],
+  declarations: [CardComponent, HeaderComponent, BannerComponent, DetailsformComponent, FooterComponent],
   imports: [
     CommonModule, FormsModule
   ],
-  exports: [CardComponent, HeaderComponent, BannerComponent]
+  exports: [CardComponent, HeaderComponent, BannerComponent, FooterComponent]
 })
 export class SharedModule { }
