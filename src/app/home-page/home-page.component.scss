@@ -112,7 +112,6 @@
         height: 215px;
         border: 1px solid lightgrey;
         z-index: 1;
-        box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
         border-radius: 5px;
         //width: 280px;
         .content{
@@ -128,6 +127,7 @@
       }
       .knowMoreCard:hover{
         border: 1px solid #ffa230;
+        box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
         .title{
           color: #ffa230!important;
         }

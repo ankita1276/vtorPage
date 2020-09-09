@@ -18,7 +18,7 @@ export class HomePageComponent implements OnInit {
     
   }
   btnRoute(path){
-    this.router.navigate([path]);
+    this.router.navigate([]).then(result => {  window.open(path, '_blank'); });
   }
 
 }
