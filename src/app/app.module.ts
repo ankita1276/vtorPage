@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component'
 import { FormsModule } from '@angular/forms';
-
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
