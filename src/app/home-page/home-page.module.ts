@@ -7,10 +7,11 @@ import { EcommerceComponent } from './ecommerce/ecommerce.component';
 import { FormsModule } from '@angular/forms';
 import { ELearningComponent } from './e-learning/e-learning.component';
 import { CommunityComponent } from './community/community.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 @NgModule({
-  declarations: [NightOwlerComponent, EcommerceComponent, ELearningComponent, CommunityComponent],
+  declarations: [NightOwlerComponent, EcommerceComponent, ELearningComponent, CommunityComponent, BookingComponent],
   imports: [
     CommonModule,
     HomePageRoutingModule,

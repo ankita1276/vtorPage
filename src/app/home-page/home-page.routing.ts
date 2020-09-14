@@ -5,6 +5,7 @@ import { NightOwlerComponent } from './night-owler/night-owler.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
 import { ELearningComponent } from './e-learning/e-learning.component';
 import { CommunityComponent } from './community/community.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
     {
         path: 'community',
         component: CommunityComponent
+    },
+    {
+        path: 'appointment-booking',
+        component: BookingComponent
     }
 ];
 

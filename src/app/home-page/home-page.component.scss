@@ -1,162 +1,161 @@
-.mainBackground{
-    background: #f8f8f7;
-    //background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
+.mainBackground {
+  background: #f8f8f7;
+  //background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
 }
-.containerBackground{
-     background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
-     padding: 10rem 7rem 0rem 14%;
+.containerBackground {
+  background: linear-gradient(180deg, #ffeacf 0%, #f8f8f8 100%);
+  padding: 10rem 7rem 0rem 14%;
 }
 .home-container {
   padding: 0rem 10rem 3rem 14%;
 }
-.home-product{
+.home-product {
   padding: 0rem 0rem 3rem 14%;
 }
-  .enquiry{
-      .part1  {
-        position: absolute;
-        left: 57%;
-        top: 148.82px;
-      }
-      .vector{
-        position: absolute;
-        width: 112.58px;
-        height: 97.03px;
-        left: 53%;
-        top: 105.01px;
-        z-index: 2;
-      }
-      .darkVector{
-        position: absolute;
-        width: 136px;
-        height: 136.12px;
-        left: 53%;
-        top: 131.67px;
-        z-index: 1;
-      }
-      .bigVector{
-        position: absolute;
-        width: 368.2px;
-        height: 366.51px;
-        left: 68%;
-        top: 302.59px;
-      }
-      .bigDarkVector{
-        position: absolute;
-        left: 61%;
-        top: 439.62px;
-      }
-      .productVector{
-        position: absolute;
-        width: 458.59px;
-        height: 451.61px;
-        left: 133.62px;
-        top: 895.61px;  
-      }
-      .darkProductVector{
-        position: absolute;
-        left: 230.5px;
-        top: 940px;
-      }
-    }
-  .fontxl {
-    font-size: 48px;
-    line-height: 72px;
+.enquiry {
+  .part1 {
+    position: absolute;
+    left: 57%;
+    top: 148.82px;
   }
-  .email-id{
-    background: rgba(255, 255, 255, 0.38);
-    box-shadow: 4px 5px 30px rgba(219, 219, 219, 0.25);
-    backdrop-filter: blur(25px);
-    padding: 16px;
-    border-radius: 5px;
-    ::placeholder {
-        color:#C1C1C1;
-    }
-    
-      input{
-        width: 100%;
-        padding: 1.5rem;
-        border:none;
-      }
+  .vector {
+    position: absolute;
+    width: 112.58px;
+    height: 97.03px;
+    left: 53%;
+    top: 105.01px;
+    z-index: 2;
   }
-  .dropdown{
-    background: rgba(255, 162, 48, 0.26);
-    backdrop-filter: blur(20px);
-    border-radius: 5px;
-    padding: 16px;
-    .btn-dropdown{
-        background: #FFEACF;
-        background: #FFEACF;
-        border-radius: 5px;
-        width: 55%;
-        padding: 1.5rem;
-        margin-right: 1.5rem;
+  .darkVector {
+    position: absolute;
+    width: 136px;
+    height: 136.12px;
+    left: 53%;
+    top: 131.67px;
+    z-index: 1;
+  }
+  .bigVector {
+    position: absolute;
+    width: 368.2px;
+    height: 366.51px;
+    left: 68%;
+    top: 302.59px;
+  }
+  .bigDarkVector {
+    position: absolute;
+    left: 61%;
+    top: 439.62px;
+  }
+  .productVector {
+    position: absolute;
+    width: 458.59px;
+    height: 451.61px;
+    left: 133.62px;
+    top: 895.61px;
+  }
+  .darkProductVector {
+    position: absolute;
+    left: 230.5px;
+    top: 940px;
+  }
 }
-    .orange-btn{
-        background: #ffa230;
-        border-radius: 5px;
-        width:40%;
-        padding: 1.5rem;
+.fontxl {
+  font-size: 48px;
+  line-height: 72px;
+}
+.email-id {
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: 4px 5px 30px rgba(219, 219, 219, 0.25);
+  backdrop-filter: blur(25px);
+  padding: 16px;
+  border-radius: 5px;
+  ::placeholder {
+    color: #c1c1c1;
+  }
+
+  input {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+  }
+}
+.dropdown {
+  background: rgba(255, 162, 48, 0.26);
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  padding: 16px;
+  .btn-dropdown {
+    background: #ffeacf;
+    background: #ffeacf;
+    border-radius: 5px;
+    width: 55%;
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .orange-btn {
+    background: #ffa230;
+    border-radius: 5px;
+    width: 40%;
+    padding: 1.5rem;
+  }
+}
+.product {
+  margin-top: 18rem;
+  .ml-7 {
+    margin-left: 13rem;
+  }
+  .knowMoreCard {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 279px;
+    height: 215px;
+    border: 1px solid lightgrey;
+    z-index: 1;
+    border-radius: 5px;
+    //width: 280px;
+    .content {
+      height: 105px;
+    }
+    .btn-grey {
+      padding: 5px 50px;
+      background: linear-gradient(180deg, #9c9c9c 0%, #e6e6e6 100%);
+      // background: linear-gradient(180deg, #9C9C9C 0%, #E6E6E6 100%);
+      border-radius: 4px;
     }
   }
-  .product{
-      margin-top: 18rem;
-      .ml-7{
-        margin-left: 18rem;
-      }
-      .knowMoreCard{
-        background: #FFFFFF;
-        border-radius: 5px;
-        padding: 20px;
-        width: 279px;
-        height: 215px;
-        border: 1px solid lightgrey;
-        z-index: 1;
-        border-radius: 5px;
-        //width: 280px;
-        .content{
-            height: 105px;
-        }
-        .btn-grey{
-          padding: 5px 50px;
-          background: linear-gradient(180deg, #9C9C9C 0%, #E6E6E6 100%);
-           // background: linear-gradient(180deg, #9C9C9C 0%, #E6E6E6 100%);
-            border-radius: 4px;
-        }
-       
-      }
-      .knowMoreCard:hover{
-        border: 1px solid #ffa230;
-        box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
-        .title{
-          color: #ffa230!important;
-        }
-        .btn-grey{
-          background: linear-gradient(180deg, #FFA230 0%, #FFEACF 100%);
-         }
-      }
+  .knowMoreCard:hover {
+    border: 1px solid #ffa230;
+    box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
+    .title {
+      color: #ffa230 !important;
+    }
+    .btn-grey {
+      background: linear-gradient(180deg, #ffa230 0%, #ffeacf 100%);
+    }
   }
-  .clients{
-      .backgroundImg{
-        background: url("../../assets/theatre.jpg");
-        height: 330px;
-      }
-      .clientBox{
-        width: 100px;
-        height: 100px;
-        left: 880px;
-        top: 2146px;
-        background: rgba(255, 162, 48, 0.7);
-        border-radius: 4px;
-        margin-bottom: 2rem;
-      }
+}
+.clients {
+  .backgroundImg {
+    background: url("../../assets/theatre.jpg");
+    height: 330px;
   }
-  .howWork{
-    .workBoxLine{
+  .clientBox {
+    width: 100px;
+    height: 100px;
+    left: 880px;
+    top: 2146px;
+    background: rgba(255, 162, 48, 0.7);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+}
+.howWork {
+  .workBoxLine {
     position: relative;
     z-index: 1;
-   }
-   .workBoxLine:before{
+  }
+  .workBoxLine:before {
     content: "";
     content: "";
     z-index: -1;
@@ -165,12 +164,12 @@
     width: 40%;
     right: 88%;
     bottom: 45%;
-   }
-   .shortWorkBoxLine{
+  }
+  .shortWorkBoxLine {
     position: relative;
     z-index: 1;
-   }
-   .shortWorkBoxLine:before{
+  }
+  .shortWorkBoxLine:before {
     content: "";
     content: "";
     z-index: -1;
@@ -179,12 +178,12 @@
     width: 54px;
     right: 88%;
     bottom: 45%;
-   }
-   .lineDown{
+  }
+  .lineDown {
     position: relative;
     z-index: 1;
-   }
-   .lineDown:after{
+  }
+  .lineDown:after {
     content: "";
     content: "";
     content: "";
@@ -196,177 +195,178 @@
     bottom: 45%;
     transform: rotate(90deg);
     top: 118%;
-   }
-    .workBox{
-      z-index: 1;
-      border-top: 2px solid white;
+  }
+  .workBox {
+    z-index: 1;
+    border-top: 2px solid white;
     height: 72px;
     width: 279px;
     color: white;
     font-weight: 500;
-    background: linear-gradient(0deg, #FFA230, #FFA230);
+    background: linear-gradient(0deg, #ffa230, #ffa230);
     box-shadow: 5px 5px 30px rgba(26, 26, 26, 0.13);
     border-radius: 5px;
     /* text-align: center; */
     display: flex;
     justify-content: center;
-    align-items: center;}
-    .line1{
-      position: absolute;
-      width: 837px;
-      height: 1px;
-      left: 15px;
-      top: 88px;
-    }
-    .line2{
-      position: absolute;
-      width: 837px;
-      height: 1px;
-      left: 15px;
-      top: 206px;
-    }
-    .line3{
-      position: absolute;
-      left: 852px;
-      top: 73px;
-    }
-  }
-
-.team{
-    background: linear-gradient(to bottom,#f8f8f8 0%,#ffeacf 100%);
-        .teamImg{
-            // background: linear-gradient(to bottom, #333, #333 60%, #eee 75%)
-            // background-image: linear-gradient(red, yellow);
-            //height: 300px;
-          }
-  }
-  .teamBox{
-    padding: 0rem 10rem 0rem 14%;
-  }
-  .nameBox{
-    // position: absolute;
-     width: 30px;
-     height: 30px;
-    // left: 481px;
-    // top: 2959px;
-     background: #FFEACF;
-     border: 1px solid #FFA230;
-     box-sizing: border-box;
-     border-radius: 4px;
-     margin:0px 5px;
-   }
-   .font-strong{
-       font-weight: 500;
-   }
-   .workContainer{
-    background: #FFEACF;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .line1 {
     position: absolute;
-    width: 100%;
-    height: 495px;
-    left: 0px;
-    top: 1522px;
-   }
-   h2.strikeLine {
-    position: relative;
-    z-index: 1;
-    &:before {
-      border-top: 15px solid #ffa230;
-      content: "";
-      margin: 0 auto;
-      position: absolute;
-      top: 62%;
-      left: -200px;
-      right: 0;
-      bottom: 0;
-      width: 34%;
-      z-index: -1;
-    }
+    width: 837px;
+    height: 1px;
+    left: 15px;
+    top: 88px;
   }
-  h2.strikeLineTeam{
-    position: relative;
-    z-index: 1;
-    &:before {
-      border-top: 15px solid #ffa230;
-      content: "";
-      margin: 0 auto;
-      position: absolute;
-      top: 62%;
-      left: -88%;
-      right: 0;
-      bottom: 0;
-      width: 8%;
-      z-index: -1;
-    }
+  .line2 {
+    position: absolute;
+    width: 837px;
+    height: 1px;
+    left: 15px;
+    top: 206px;
   }
-  h2.strikeLineProduct{
-    position: relative;
-    z-index: 1;
-    &:before {
-      border-top: 15px solid #ffa230;
-      content: "";
-      margin: 0 auto;
-      position: absolute;
-      top: 62%;
-      left: -211px;
-      right: 0;
-      bottom: 0;
-      width: 38%;
-      z-index: -1;
-    }
+  .line3 {
+    position: absolute;
+    left: 852px;
+    top: 73px;
   }
-  h2.strikeLineWork{
-    position: relative;
-    z-index: 1;
-    &:before {
-      border-top: 15px solid #ffa230;
-      content: "";
-      margin: 0 auto;
-      position: absolute;
-      top: 62%;
-      left: -75%;
-      right: 0;
-      bottom: 0;
-      width: 21%;
-      z-index: -1;
-    }
+}
+
+.team {
+  background: linear-gradient(to bottom, #f8f8f8 0%, #ffeacf 100%);
+  .teamImg {
+    // background: linear-gradient(to bottom, #333, #333 60%, #eee 75%)
+    // background-image: linear-gradient(red, yellow);
+    //height: 300px;
   }
-  h2.strikeLineClient{
-    position: relative;
-    z-index: 1;
-    &:before {
-      border-top: 15px solid #ffa230;
-      content: "";
-      margin: 0 auto;
-      position: absolute;
-      top: 62%;
-      left: -86%;
-      right: 0;
-      bottom: 0;
-      width: 10%;
-      z-index: -1; 
-    }
+}
+.teamBox {
+  padding: 0rem 10rem 0rem 14%;
+}
+.nameBox {
+  // position: absolute;
+  width: 30px;
+  height: 30px;
+  // left: 481px;
+  // top: 2959px;
+  background: #ffeacf;
+  border: 1px solid #ffa230;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0px 5px;
+}
+.font-strong {
+  font-weight: 500;
+}
+.workContainer {
+  background: #ffeacf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  width: 100%;
+  height: 495px;
+  left: 0px;
+  top: 1522px;
+}
+h2.strikeLine {
+  position: relative;
+  z-index: 1;
+  &:before {
+    border-top: 15px solid #ffa230;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 62%;
+    left: -200px;
+    right: 0;
+    bottom: 0;
+    width: 34%;
+    z-index: -1;
   }
-  .orange-gradient{
-    box-shadow: 5px 5px 30px rgba(106, 106, 106, 0.22);
-    background: linear-gradient(180deg, #fcdeb8 38%, #ffffff 100%);
+}
+h2.strikeLineTeam {
+  position: relative;
+  z-index: 1;
+  &:before {
+    border-top: 15px solid #ffa230;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 62%;
+    left: -88%;
+    right: 0;
+    bottom: 0;
+    width: 8%;
+    z-index: -1;
   }
+}
+h2.strikeLineProduct {
+  position: relative;
+  z-index: 1;
+  &:before {
+    border-top: 15px solid #ffa230;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 62%;
+    left: -211px;
+    right: 0;
+    bottom: 0;
+    width: 38%;
+    z-index: -1;
+  }
+}
+h2.strikeLineWork {
+  position: relative;
+  z-index: 1;
+  &:before {
+    border-top: 15px solid #ffa230;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 62%;
+    left: -75%;
+    right: 0;
+    bottom: 0;
+    width: 21%;
+    z-index: -1;
+  }
+}
+h2.strikeLineClient {
+  position: relative;
+  z-index: 1;
+  &:before {
+    border-top: 15px solid #ffa230;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 62%;
+    left: -86%;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    z-index: -1;
+  }
+}
+.orange-gradient {
+  box-shadow: 5px 5px 30px rgba(106, 106, 106, 0.22);
+  background: linear-gradient(180deg, #fcdeb8 38%, #ffffff 100%);
+}
 .font-500 {
   font-weight: 500;
-};
-.font-xl{
+}
+.font-xl {
   font-size: 36px;
 }
-.pr-7{
+.pr-7 {
   padding-right: 7rem;
 }
-.carousel-inner{
+.carousel-inner {
   box-shadow: 5px 5px 30px rgba(106, 106, 106, 0.22);
   img {
     width: 100%;
     height: 100%;
   }
-} 
+}
