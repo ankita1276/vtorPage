@@ -25,23 +25,23 @@ export class CommunityComponent implements OnInit {
     ]
   };
   cardContent = [{
-    "title": 'Administered Order Management System',
-    "paragraph": 'If you do not want to directly map your customer orders to the vendors and select a vendor to assign a specific item out of the list of vendors who can carter the order. We have this feature covered for you.'
+    "title": 'Business Profile',
+    "paragraph": 'Manage Business profiles if its a business marketing community and let everyone know about your services and products with their respective pricing and allow users to initiate conversation about the same'
     }, {
-      "title": 'Service area wise product catalogue and pricing management',
-      "paragraph": 'Create your own virtual geography using pincodes while defining '
+      "title": 'One on One / Group chat',
+      "paragraph": 'Allow the community members to chat with each other either direct or on group'
     }, {
-      "title": 'Mobile friendly Website and Mobile Application for your Buyers',
-      "paragraph": 'Create your own virtual geography using pincodes while defining'
+      "title": 'One on One / Group Video Conferencing',
+      "paragraph": 'Offer unlimited video conferencing and one on one video calling for free to the members of your community'
     }, {
-      "title": 'Cross-Platform Mobile App for Vendors to maintain product catalogues and orders',
-      "paragraph": 'Create your own virtual geography using pincodes while defining'
+      "title": 'Post updates',
+      "paragraph": 'Community Members can post updates on to their profile in the form of text, images and videos'
     }, {
-      "title": "Cross-Platform Mobile App for delivery partners",
-      "paragraph": 'Create your own virtual geography using pincodes while defining '
+      "title": "Like and comment other members post",
+      "paragraph": 'Allows a commitee member to like or comment on other community members posts. This comes with an add-on fucitionality of censor where the admin can allow or disallow a particular comment to be shown'
     }, {
-      "title": "Suppier verification and ratings system and detailed dashboarding",
-      "paragraph": 'Create your own virtual geography using pincodes while defining  '
+      "title": "Matrimony",
+      "paragraph": 'For communities who allow members to connect for matrimony, we offer profile matching functionalites which displays high matching profiles to the users feed'
     }]
   constructor(private router: Router, private service: ComponentService) { }
 

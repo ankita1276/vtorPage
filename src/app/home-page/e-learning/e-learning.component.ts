@@ -15,7 +15,7 @@ export class ELearningComponent implements OnInit {
   content = {
     "bgImage": 'elearning',
     "title": 'E-Learning & Entertainment',
-    'subTitle': 'Consolidated robust platform for content creators, online coaches, classes and college with a bunch of super useful features.',
+    'subTitle': 'Consolidated robust platform for content creators, online coaches, classes and college with a bunch of real problem solving features.',
     "getDetailsForm": true,
     "button": [
       {
@@ -25,23 +25,23 @@ export class ELearningComponent implements OnInit {
     ]
   };
   cardContent = [{
-    "title": 'Admin panel to create courses and curiculum ',
-    "paragraph": 'If you do not want to directly map your customer orders to the vendors and select a vendor to assign a specific item out of the list of vendors who can carter the order. We have this feature covered for you.'
+    "title": 'Admin panel to create courses and curiculum with payment gateway integration',
+    "paragraph": 'Create courses and cirriculum using pre-recorded sessions and set a price to the course for the student to be able to buy from the catalogue of courses created by you. Pre integrated Payment Gateway.'
     }, {
       "title": 'Unlimited virtual video conferencing and live streaming',
-      "paragraph": 'Create your own virtual geography using pincodes while defining'
+      "paragraph": 'Initiate and attend unlimited live webinars for your students and attract new customers by allowing then to attend free sessions.'
     }, {
       "title": 'Attendence Management system',
-      "paragraph": 'Create your own virtual geography using pincodes while defining'
+      "paragraph": 'After buying sessions and subscribing for any course, our system allows to track whether if a student missed out on any session of their course or not'
     }, {
       "title": 'Vtor Labs Unique Student Attentivness Score calculator',
-      "paragraph": 'Create your own virtual geography using pincodes while defining'
+      "paragraph": 'Student Attentivess over online classes is the most important problem and we allow a set of features which calculates the attentiveness of the student whilest attaneding any class'
     }, {
       "title": "Leaderboard Management",
-      "paragraph": 'Create your own virtual geography using pincodes while defining '
+      "paragraph": 'Competitive learning helps to create motivation in your customers to continuously perform better in whatever they are pursuing. We offer a customizable Leaderboard which allow the customers to keep a track of their ranking'
     }, {
-      "title": "Online payment gateway integration",
-      "paragraph": 'Create your own virtual geography using pincodes while defining  '
+      "title": "One on One Mentoring",
+      "paragraph": 'Students can opt for one-on-one mentorship using our platform which allows them to chat and attend video calls within the time spam of the mentorship subscription'
     }]
   constructor(private router: Router, private service: ComponentService) { }
 
