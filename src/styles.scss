@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  overflow-x: hidden;
-}
+
+html, body {
+  overflow-x:hidden 
+} 
 html {
   scroll-behavior: smooth;
 }
@@ -91,5 +92,8 @@ html {
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
   .containerBox {
     padding: 2rem;
+  }
+  .btnGroup {
+    justify-content: center !important;
   }
 }

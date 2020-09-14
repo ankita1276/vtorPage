@@ -1,5 +1,5 @@
 <div class="Banner-Cotainer row {{content.bgImage}}">
-  <div class="col-md-6 d-flex flex-column justify-content-end align-items-start">
+  <div class="col-md-6 d-flex flex-column justify-content-end align-items-start mobileSpace">
     <h1 class="text-orange mb-3">{{ content.title }}</h1>
     <h6 class="text-white font-lg">{{ content.subTitle }}</h6>
     <h6 *ngIf="content.subQuestion" class="text-white font-lg font-weight-bold">{{content.subQuestion}}</h6>
@@ -13,7 +13,7 @@
       </ng-container>
     </div>
   </div>
-  <div class="col-md-6 d-flex justify-content-center align-items-center" *ngIf="content.getDetailsForm">
+  <div class="col-md-6 d-flex justify-content-center align-items-center mobileHide" *ngIf="content.getDetailsForm">
     <app-detailsform></app-detailsform>
   </div>
 </div>

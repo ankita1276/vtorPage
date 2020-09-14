@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ComponentService } from '../shared/service/component.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,10 +9,11 @@ import { Router } from '@angular/router';
 })
 export class HomePageComponent implements OnInit {
   email:any;
-  constructor(private router: Router) { }
+  constructor(private router: Router,private service: ComponentService) { }
 
   ngOnInit(): void {
     console.log(this.router.url); 
+    this.service.setShowHeader(true);
   }
   submit(){
     console.log(this.email,"homeee");

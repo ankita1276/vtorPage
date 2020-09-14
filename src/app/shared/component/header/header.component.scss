@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
 .btn-main {
   background: #ffeacf;
   border-radius: 5px;
@@ -13,7 +17,17 @@
       color:#ffa230 !important;
     }
   }
-  
 }
+@include media-breakpoint-down(md)  {
+  .sticky-top {
+    display: none;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .pos-f-t{
+    display: none;
+  }
+ }
+
 
 

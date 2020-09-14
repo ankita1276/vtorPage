@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
 .footer{
     height: 279px;
     background: linear-gradient(180deg, #3E3E3E 0%, #231F20 100%);
@@ -38,5 +41,16 @@
     }
     .nav-link {
         cursor: pointer;
+    }
+    @include media-breakpoint-down(md)  {
+        height: 100%;
+        .mobileHide{
+            display: none
+        }
+        .mobileView{
+            display: flex;
+            flex-direction: row;
+            padding: 0px 0px 25px 0px;
+        }
     }
 }
