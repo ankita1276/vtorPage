@@ -152,7 +152,51 @@
       }
   }
   .howWork{
-    
+    .workBoxLine{
+    position: relative;
+    z-index: 1;
+   }
+   .workBoxLine:before{
+    content: "";
+    content: "";
+    z-index: -1;
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 40%;
+    right: 88%;
+    bottom: 45%;
+   }
+   .shortWorkBoxLine{
+    position: relative;
+    z-index: 1;
+   }
+   .shortWorkBoxLine:before{
+    content: "";
+    content: "";
+    z-index: -1;
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 54px;
+    right: 88%;
+    bottom: 45%;
+   }
+   .lineDown{
+    position: relative;
+    z-index: 1;
+   }
+   .lineDown:after{
+    content: "";
+    content: "";
+    content: "";
+    z-index: -1;
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 28%;
+    right: 37%;
+    bottom: 45%;
+    transform: rotate(90deg);
+    top: 118%;
+   }
     .workBox{
       z-index: 1;
       border-top: 2px solid white;
