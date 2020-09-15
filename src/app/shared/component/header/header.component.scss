@@ -18,9 +18,17 @@
     }
   }
 }
+.sticky-top{
+  position: fixed;
+  width: 100%;
+}
 @include media-breakpoint-down(md)  {
   .sticky-top {
     display: none;
+  }
+  .navbar-toggler{
+    padding:5px 0px !important;
+    background:lightgrey;
   }
 }
 @include media-breakpoint-up(lg) {

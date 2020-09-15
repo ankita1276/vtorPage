@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
@@ -69,6 +72,9 @@ html {
 /* Input fields*/
 .footerFields{
   margin:0px 10px;
+  @include media-breakpoint-down(md) {
+    margin:0px;
+  }
   ::placeholder {
       color:#FFA230;
   }
@@ -79,7 +85,10 @@ html {
       background: rgba(255, 162, 48, 0.19) !important;
       backdrop-filter: blur(15px);
       color:#FFA230;
-      border-radius: 4px
+      border-radius: 4px;
+      @include media-breakpoint-down(md) {
+        margin:3px 0px !important;
+    }
   }
 }
 .orange-gradient{
@@ -95,5 +104,13 @@ html {
   }
   .btnGroup {
     justify-content: center !important;
+  }
+  .mobileBook{
+    width: 100%;
+    margin:15px
+  }
+  .mobileText{
+    margin-bottom: 2.5rem;
+    
   }
 }

@@ -395,6 +395,7 @@ h2.strikeLineClient {
   .orange-btn {
     padding: 0.5rem !important;
     font-size: 14px;
+    margin-top: 15px;
   }
   .btn-dropdown {
     width: 100% !important;
@@ -413,7 +414,9 @@ h2.strikeLineClient {
   .ml-5,
   .ml-4,
   .pl-5,
-  .mt-5 {
+  .mt-5,
+  .pr-5,
+  .px-5 {
     margin: 0px !important;
     padding: 0px !important;
   }
@@ -428,7 +431,7 @@ h2.strikeLineClient {
     width: 100vw !important;
   }
   .mobileSpace {
-    margin: 10px 0px;
+    margin: 0px 10px !important;
   }
   .mobileBox {
     padding: 0px !important;
@@ -453,5 +456,34 @@ h2.strikeLineClient {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 15px !important;
+  }
+
+  h2.strikeLineWork {
+    &:before {
+      left: -15%;
+      width: 78%;
+    }
+  }
+  h2.strikeLineClient {
+    &:before {
+      left: -56%;
+      width: 37%;
+    }
+  }
+  h2.strikeLineTeam {
+    &:before {
+      left: -58%;
+      width: 30%;
+    }
+  }
+  h2.strikeLineProduct {
+    &:before {
+      left: -162px;
+      width: 50%;
+    }
+  }
+  .orange-gradient{
+    min-height: 300px;
   }
 }
