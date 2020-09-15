@@ -377,6 +377,10 @@ h2.strikeLineClient {
   }
 }
 
+.mobilePadding{
+  z-index: 1;
+  padding-top: 6rem;
+}
 @include media-breakpoint-down(md) {
   .containerBackground,
   .home-container,
