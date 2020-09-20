@@ -14,11 +14,13 @@ number:any;
 
   ngOnInit(): void {
   }
-  onClick(path: string,elementid?){
-    if(elementid){
-      this.viewportScroller.scrollToAnchor(path);
-    }
+  onClick(path: string){
     this.router.navigate([]).then(result => {  window.open(path, '_blank'); });
+  }
+  samePageRoute(elementid){
+    if(elementid){
+      this.viewportScroller.scrollToAnchor(elementid);
+    }
   }
   submit(){}
 }
