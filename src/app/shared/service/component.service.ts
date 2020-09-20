@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,13 @@ import { BehaviorSubject } from 'rxjs';
 export class ComponentService {
   private showHeader = new BehaviorSubject<boolean>(true);
 
-  constructor() { }
+  googleSheetUrl = "/script.google.com/macros/s/AKfycbz8K74fRaRgO96JTb6uBN6-_4pXMpfnCDWahFtrciU4jd06ycnh/exec"
+
+  constructor(private httpClient: HttpClient) { }
+
+  sendPostRequest(data: Object): Observable<Object> {
+    return this.httpClient.get(this.googleSheetUrl, data);
+  }
 
   setShowHeader(value){
     this.showHeader.next(value);
