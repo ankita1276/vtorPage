@@ -90,12 +90,17 @@
   padding: 16px;
   margin-left: 10px;
   .btn-dropdown {
-    background: #ffeacf;
-    background: #ffeacf;
     border-radius: 5px;
     width: 55%;
-    padding: 1.5rem;
     margin-right: 0px;
+    padding: 1rem;
+    background: #ffeacf;
+  }
+  .custom-select{
+    background: #ffeacf;
+    border-color: #ffeacf;
+    text-align: center;
+    
   }
   .orange-btn {
     background: #ffa230;
@@ -277,6 +282,9 @@
   height: 30px;
   color: #ffa230;
   margin: 0px 2px;
+}
+.fa-caret-down{
+  color:black !important;
 }
 
 .font-strong {
