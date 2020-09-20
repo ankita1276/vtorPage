@@ -19,7 +19,7 @@
             <a class="nav-link px-2" [ngClass]="selectedItem == 'team' ? 'text-orange' : 'text-dark'">Team</a>
           </li>
       </ul>
-      <button *ngIf="deviceType !== 'mobile'" type="button" class="btn btn-main btn-sm font-weight-bold font-md px-5 mx-2">Contact us</button>
+      <button *ngIf="deviceType !== 'mobile'" type="button" class="btn btn-main btn-sm font-weight-bold font-md px-5 mx-2" (click)="onClick('footer')">Contact us</button>
     </div>
   </nav>
 
