@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { ComponentService } from '../../service/component.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,7 +11,8 @@ import { ViewportScroller } from '@angular/common';
 export class FooterComponent implements OnInit {
 email: any;
 number:any;
-  constructor(private router: Router,private viewportScroller: ViewportScroller, ) { }
+  
+  constructor(private router: Router,private viewportScroller: ViewportScroller, private service: ComponentService) { }
 
   ngOnInit(): void {
   }
@@ -22,5 +24,8 @@ number:any;
       this.viewportScroller.scrollToAnchor(elementid);
     }
   }
-  submit(){}
+  submit(){
+  
+    this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.email+'&Phone Number='+this.number+'&FormType=Contact Us');
+  }
 }

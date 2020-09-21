@@ -151,7 +151,7 @@
     height: 100px;
     left: 880px;
     top: 2146px;
-    background: rgba(255, 162, 48, 0.7);
+    background: rgba(255, 162, 48, 0);
     border-radius: 4px;
     margin-bottom: 2rem;
     padding: 20px
@@ -270,7 +270,17 @@
   color: #ffa230;
   margin: 0px 2px;
 }
+.float-container {
+ 
+  padding: 20px;
+}
 
+.float-child {
+  width: 50%;
+  float: center;
+  padding: 20px;
+ 
+}  
 .font-strong {
   font-weight: 500;
 }
@@ -285,6 +295,9 @@
   height: 495px;
   left: 0px;
   top: 1522px;
+}
+.img-fluid{
+  border-radius: 50%;
 }
 h2.strikeLine {
   position: relative;
@@ -302,6 +315,7 @@ h2.strikeLine {
     z-index: -1;
   }
 }
+
 h2.strikeLineTeam {
   position: relative;
   z-index: 1;

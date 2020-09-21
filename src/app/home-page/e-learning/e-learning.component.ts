@@ -51,6 +51,10 @@ export class ELearningComponent implements OnInit {
     this.service.setShowHeader(false);
     console.log(this.router.url); 
   }
-
+  submit()
+  {
+    this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
+    '&Form Type=ELearning Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
+  }
 
 }

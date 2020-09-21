@@ -27,14 +27,17 @@
         <div class="col-sm-12 col-md-6 my-3 pl-0">
             <div class="dropdown">
                 <button type="button" class="btn btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Enquiry type
+                    {{SelectedQuery}}
                   </button>
                   <div class="dropdown-menu">
-                    <span class="dropdown-item" href="#">Web Application Development</span>
-                    <span class="dropdown-item" href="#">Mobile Application Development</span>
-                    <span class="dropdown-item" href="#">E-Commerce solutions</span>
-                    <span class="dropdown-item" href="#">Marketing Solutions</span>
-                    <span class="dropdown-item" href="#">Other</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('Web Application Development')">Web Application Development</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('Mobile Application Development')">Mobile Application Development</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('E-Commerce solutions<')">E-Commerce solutions</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('Business Online Shift Solutions')">Business Online Shift Solutions</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('Support Solutions')">Support Solutions</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('Automate My Business')">Automate My Business</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('AI & Other Smart Solutions')">AI & Other Smart Solutions</span>
+                    <span class="dropdown-item" (click)="setEnquiryType('Others')">Others</span>
                     <!-- <div class="dropdown-divider"></div>
                     <span class="dropdown-item" href="#">Sepspanrated link</span> -->
                   </div>
@@ -74,7 +77,7 @@
         <div class=" knowMoreCard d-flex align-items-center flex-column mx-3 my-3">
                 <p class="title font-md mb-1 font-weight-bold">Multi-Vendor Ecommerce</p>
                 <p class="content font-md text-center text-grey mb-0 ">Plug & Play Multi-Vendor online store with 24*7 Tech Support. So, you can focus on business while we take care of your store.</p>
-                <button type="button"  (click)="btnRoute('#/home/e-commerce')" class="btn btn-grey">
+                <button type="button"  (click)="btnRoute('/e-commerce')" class="btn btn-grey">
                     Know More
                 </button>  
         </div>
@@ -134,14 +137,14 @@
         <h2 class="mb-3 col-lg-12 strikeLineClient font-xl">Clients</h2>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <div class="d-flex justify-content-center">
                     <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
                         <div class="font-lg font-weight-bold text-white">UnBelievable Holidays</div>
                         <div class="font-md text-white">Inventory and employee management System </div>
                     </div>
                     <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
-                        <div class="clientBox"> <img src="../../assets/user.svg" class="img-fluid" alt="Responsive image"></div>
+                        <div class="clientBox"> <img src="../../assets/user1.png" class="img-fluid" alt="Responsive image"></div>
                         <p class="font-md">“ Just like our name they did an unbelievable job really happy with the quality service by vtorlabs ”</p>
                         <p class="text-orange font-italic">- Mr.Sanjay Mittal</p>
                     </div>
@@ -150,12 +153,12 @@
               <div class="carousel-item">
                 
                 <div class="d-flex justify-content-center">
-                    <div class="col-lg-7 backgroundImg2 d-flex justify-content-end flex-column p-5 hideMobile">
+                    <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
                         <div class="font-lg font-weight-bold text-white">The Theater Project</div>
                         <div class="font-md text-white">Inventory and employee management System </div>
                     </div>
                     <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
-                        <div class="clientBox"> <img src="../../assets/user.svg" class="img-fluid" alt="Responsive image"></div>
+                        <div class="clientBox"> <img src="../../assets/user1.png" class="img-fluid" alt="Responsive image"></div>
                         <p class="font-md">
                             “ VTOR resolve's your business problem real fast with utmost quality...” </p>
                         <p class="text-orange font-italic">- Mr. Sumit Surana</p>
@@ -164,26 +167,19 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex justify-content-center">
-                    <div class="col-lg-7 backgroundImg3 d-flex justify-content-end flex-column p-5 hideMobile">
+                    <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
                         <div class="font-lg font-weight-bold text-white">Restaurant Chain Owner</div>
                         <div class="font-md text-white">Inventory and employee management System </div>
                     </div>
                     <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
-                        <div class="clientBox"> <img src="../../assets/user.svg" class="img-fluid" alt="Responsive image"></div>
+                        <div class="clientBox"> <img src="../../assets/user2.png" class="img-fluid" alt="Responsive image"></div>
                         <p class="font-md">“ They understand the business scenerio and provide solution thats really effective and satisfying ”</p>
                         <p class="text-orange font-italic">- Mrs. Neelam Shetty</p>
                     </div>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            
           </div>
     </div>
 </div>
