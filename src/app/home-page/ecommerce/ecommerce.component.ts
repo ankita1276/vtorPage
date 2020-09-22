@@ -68,17 +68,17 @@ export class EcommerceComponent implements OnInit {
       this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
       '&Form Type=ECommerce Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
       this.Message="Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs";
-      
+      this.delay(3000).then(any=>{
+        this.ngOnInit();
+    });
       }
       else{
         
-          this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
-        
+        this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
+        this.delay(3000).then(any=>{
+          this.showError=false;
+      });
       }
-     
-      this.delay(3000).then(any=>{
-       this.ngOnInit();
-   });
   
     }
     async delay(ms: number) {

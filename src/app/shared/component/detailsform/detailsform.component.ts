@@ -37,17 +37,17 @@ export class DetailsformComponent implements OnInit {
     '&Form Type='+typeString+'&Name='+this.name+'&Phone Number='+this.number);
     this.Message="Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs";
     
+    this.delay(3000).then(any=>{
+      this.ngOnInit();
+  });
     }
     else{
-     
+      
       this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
-      console.log(this.Message);
-     
+      this.delay(3000).then(any=>{
+        this.showError=false;
+    });
     }
-   
-    this.delay(3000).then(any=>{
-     this.ngOnInit();
- });
 
   }
   async delay(ms: number) {

@@ -249,9 +249,9 @@
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content" id="ModelContent"> 
           <button class="close" id="close" (click)="closeModal()">&times;</button>
-          {{homePageComponent.MessageContent}}
+          <p id="content">{{homePageComponent.MessageContent}}</p>
         </div>
       
       </div>
