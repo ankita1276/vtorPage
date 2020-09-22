@@ -1,237 +1,261 @@
 <div class="mainBackground">
-<div class="containerBackground" id="home">
-    <div class="row enquiry mb-5">
-        <img src="../../assets/darkVector.png" class="hideMobile img-fluid darkVector" alt="Responsive image">
-        <img src="../../assets/Vector.png" class="hideMobile img-fluid vector" alt="Responsive image">
-        <img src="../../assets/bigVector.png" class="hideMobile img-fluid bigVector" alt="Responsive image">
-        <img src="../../assets/bigDarkVector.png" class="hideMobile img-fluid bigDarkVector" alt="Responsive image">
-        <img src="../../assets/darkProductVector.png" class="hideMobile img-fluid darkProductVector " alt="Responsive image">
-        <img src="../../assets/productVector.png" class="hideMobile img-fluid productVector" alt="Responsive image">
-        <img src="../../assets/part1.png" class="hideMobile img-fluid part1" alt="Responsive image">
-        <div class="col-12">
-            <h2 class="mb-0">We Build Scalable </h2>
-            <div class="text-orange font-weight-bold fontxl">Web Applications</div>
-        </div>
-        <div class="col-sm-12 col-md-5 my-3 pr-0">
-            <div class="email-id">
-                <input
-                  type="text"
-                  [placeholder]="'Email id'"
-                  class=""
-                  id="email"
-                  [(ngModel)]="email"
-                  name="email"
-                />
-              </div>
-        </div>
-        <div class="col-sm-12 col-md-6 my-3 pl-0">
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{SelectedQuery}}
-                  </button>
-                  <div class="dropdown-menu">
-                    <span class="dropdown-item" (click)="setEnquiryType('Web Application Development')">Web Application Development</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('Mobile Application Development')">Mobile Application Development</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('E-Commerce solutions<')">E-Commerce solutions</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('Business Online Shift Solutions')">Business Online Shift Solutions</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('Support Solutions')">Support Solutions</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('Automate My Business')">Automate My Business</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('AI & Other Smart Solutions')">AI & Other Smart Solutions</span>
-                    <span class="dropdown-item" (click)="setEnquiryType('Others')">Others</span>
-                    <!-- <div class="dropdown-divider"></div>
-                    <span class="dropdown-item" href="#">Sepspanrated link</span> -->
+    <div class="containerBackground" id="home">
+        <div class="row enquiry mb-5">
+            <img src="../../assets/darkVector.png" class="hideMobile img-fluid darkVector" alt="Responsive image">
+            <img src="../../assets/Vector.png" class="hideMobile img-fluid vector" alt="Responsive image">
+            <img src="../../assets/bigVector.png" class="hideMobile img-fluid bigVector" alt="Responsive image">
+            <img src="../../assets/bigDarkVector.png" class="hideMobile img-fluid bigDarkVector" alt="Responsive image">
+            <img src="../../assets/darkProductVector.png" class="hideMobile img-fluid darkProductVector " alt="Responsive image">
+            <img src="../../assets/productVector.png" class="hideMobile img-fluid productVector" alt="Responsive image">
+            <img src="../../assets/part1.png" class="hideMobile img-fluid part1" alt="Responsive image">
+            <div class="col-12">
+                <h2 class="mb-0">We Build Scalable </h2>
+                <div class="text-orange font-weight-bold fontxl">Web Applications</div>
+            </div>
+            <div class="col-sm-12 col-md-5 my-3 pr-0">
+                <div class="email-id">
+                    <input
+                      type="text"
+                      [placeholder]="'Email id'"
+                      class=""
+                      id="email"
+                      [(ngModel)]="email"
+                      name="email"
+                    />
                   </div>
-                <button class="btn orange-btn font-lg text-white font-weight-bold"(click)="submit()">Get in touch</button>
+            </div>
+            <div class="col-sm-12 col-md-6 my-3 pl-0">
+                <div class="dropdown">
+                    <div class="btn btn-dropdown input-groups">
+                        <select class="custom-select" id="inputGroupSelect02" [(ngModel)]="SelectedQuery">{{SelectedQuery}}
+                            <option class="font-weight-bold" value="Select Enquiry type" selected>Select Enquiry type <i class="fas fa-caret-down fa-2x" aria-hidden="true"></i></option>
+                            <option class="dropdownSelect" value="Web Application Development">Web Application Development</option>
+                            <option class="dropdownSelect" value="Mobile Application Development">Mobile Application Development</option>
+                            <option class="dropdownSelect" value="E-Commerce solutions">E-Commerce solutions</option>
+                            <option class="dropdownSelect" value="Marketing Solutions">Marketing Solutions</option>
+                            <option class="dropdownSelect" value="Business Automation Solutions">Business Automation Solutions</option>
+                            <option class="dropdownSelect" value="Online Business Solutons">Online Business Solutions</option>
 
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <p class="mb-0  font-md pr-5">Have a software product idea but worried about the money it takes to build one? You are at the right place! </p>
-            <p class="font-lg">We can help you turn your <b>Vision</b> into <span class="text-orange font-weight-bold">Reality</span></p>
-        </div>
-        <!-- <div class="col-sm-12 col-md-2 my-3">
-            <div class="dropdown">
-            </div>
-        </div> -->
-    </div>
-</div>
-<span id="product"></span>
-<div class="home-product">
-    <div class="row product">
-        <div class="col-md-4 d-flex align-items-center mr-2">
-            <div class="textbox">
-                <h2 class="mb-3 strikeLineProduct font-xl">Products</h2>
-                <p class="mb-0 text-black font-md font-500 pr-7">We believe every great idea cannot be great until its implemented right</p>
-            </div>
-        </div>
-        <div class=" knowMoreCard d-flex align-items-center flex-column mr-3 my-3">
-           
-                <p class="title font-md mb-1 font-weight-bold">The Nightowlers</p>
-                <p class="content font-md text-center text-grey mb-0 ">We are revolutionalizing how Freelancing works in India.
-                    Single Stop Shop for all your freelancing needs. </p>
-                <button type="button" (click)="btnRoute('#/home/nightOwler')" class="btn btn-grey">
-                    Know More
-                </button>
-           
-        </div>
-        <div class=" knowMoreCard d-flex align-items-center flex-column mx-3 my-3">
-                <p class="title font-md mb-1 font-weight-bold">Multi-Vendor Ecommerce</p>
-                <p class="content font-md text-center text-grey mb-0 ">Plug & Play Multi-Vendor online store with 24*7 Tech Support. So, you can focus on business while we take care of your store.</p>
-                <button type="button"  (click)="btnRoute('/e-commerce')" class="btn btn-grey">
-                    Know More
-                </button>  
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-md knowMoreCard d-flex align-items-center flex-column mr-3 my-3 ml-7 mobileLeft">
-                <p class="title font-md mb-1 font-weight-bold">E-Learning & Entertainment</p>
-                <p class="content font-md text-center text-grey mb-0 ">Consolidated robust platform for content creators, online coaches, classes and college with a bunch of real problem solving features. </p>
-                <button type="button" (click)="btnRoute('#/home/e-learning')" class="btn btn-grey">
-                    Know More
-                </button>
-            </div>
-            <div class="col-md knowMoreCard d-flex align-items-center flex-column mx-3 my-3 mobileLeft">
-                <p class="title font-md mb-1 font-weight-bold">Virtual Community</p>
-                <p class="content font-md text-center text-grey mb-0 ">Get more connected with your community. Personalized app for your community with  feature add-ons as & when required. </p>
-                <button type="button" (click)="btnRoute('#/home/community')" class="btn btn-grey">
-                    Know More
-                </button>
-            </div>
-            <div class="col-md knowMoreCard d-flex align-items-center flex-column mx-3 my-3 mobileLeft">
-                <p class="title font-md mb-1 font-weight-bold">Appointment booking system</p>
-                <p class="content font-md text-center text-grey mb-0 ">Extremely user friendly tool for all your appointment management needs. Preferred for any business by ticketing system. </p>
-                <button type="button" (click)="btnRoute('#/home/appointment-booking')" class="btn btn-grey">
-                    Know More
-                </button>
-            </div>
-        </div>
-        <div class="ml-5 px-5 py-4 d-flex hideMobile"><p class="font-md text-grey ml-4 pl-5 mobilePadding"></p></div>
-
-    </div>
-</div>
-<div class="workContainer"></div>
-<div class="home-container" id="work">
-    <div class="row howWork my-5">
-        <h2 class="my-4 col-lg-12 strikeLineWork font-xl">How we work</h2>
-        <p class="col-lg-11 font-md">We follow a unique way of approaching problems and implementing solutions. We believe that anything which doesn't provide value to the business is a waste of both time and efforts. We understand and brainstorm enough before we start executing any solution.</p>
-        <div class="col-12 d-flex align-items-center flex-column">
-            <!-- <img src="../../assets/Line 1.png" class="img-fluid line1" alt="Responsive image">
-            <img src="../../assets/Line 1.png" class="img-fluid line2" alt="Responsive image">
-            <img src="../../assets/Line 3.png" class="img-fluid line3" alt="Responsive image"> -->
-            <div class="row mt-5">
-                <div class="workBoxLine"><div class="workBox mx-3" data-toggle="tooltip" data-placement="top" title="Tooltip on top"> <img src="../../assets/bulb.png" class="pr-2" alt="Responsive image">Vision</div></div>
-                <div class="shortWorkBoxLine"><div class="workBox mx-3"><img src="../../assets/plan.png" class="pr-2" alt="Responsive image">Plan</div></div>
-                <div class="shortWorkBoxLine lineDown"><div class="workBox mx-3"><img src="../../assets/pen.png" class="pr-2" alt="Responsive image">Design</div></div>
-            </div>
-            <div class="row mt-5" id="client">
-                <div class="workBoxLine"><div class="workBox mx-3"><img src="../../assets/sun.png" class="pr-2" alt="Responsive image">Reality</div></div>
-                <div class="shortWorkBoxLine"><div class="workBox mx-3"><img src="../../assets/plane.png" class="pr-2" alt="Responsive image">Deploy</div></div>
-                <div class="shortWorkBoxLine"><div class="workBox mx-3"><img src="../../assets/execute.png" class="pr-2" alt="Responsive image">Execute</div></div>
-            </div>
-        </div>
-        
-       
-    </div>
-</div>
-<div class="home-container">
-    <div class="row clients my-5">
-        <h2 class="mb-3 col-lg-12 strikeLineClient font-xl">Clients</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
-                        <div class="font-lg font-weight-bold text-white">UnBelievable Holidays</div>
-                        <div class="font-md text-white">Inventory and employee management System </div>
+                            <option class="dropdownSelect"value="Other">Other</option>
+                        </select>
+                       
                     </div>
-                    <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
-                        <div class="clientBox"> <img src="../../assets/user1.png" class="img-fluid" alt="Responsive image"></div>
-                        <p class="font-md">“ Just like our name they did an unbelievable job really happy with the quality service by vtorlabs ”</p>
-                        <p class="text-orange font-italic">- Mr.Sanjay Mittal</p>
-                    </div>
+                      <div class="dropdown-menu">
+                        <span class="dropdown-item" href="#">Web Application Development</span>
+                        <span class="dropdown-item" href="#">Mobile Application Development</span>
+                        <span class="dropdown-item" href="#">E-Commerce solutions</span>
+                        <span class="dropdown-item" href="#">Marketing Solutions</span>
+                        <span class="dropdown-item" href="#">Other</span>
+                        <!-- <div class="dropdown-divider"></div>
+                        <span class="dropdown-item" href="#">Sepspanrated link</span> -->
+                      </div>
+                    <button class="btn orange-btn font-lg text-white font-weight-bold"(click)="submit()">Get in touch</button>
+    
                 </div>
-              </div>
-              <div class="carousel-item">
-                
-                <div class="d-flex justify-content-center">
-                    <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
-                        <div class="font-lg font-weight-bold text-white">The Theater Project</div>
-                        <div class="font-md text-white">Inventory and employee management System </div>
-                    </div>
-                    <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
-                        <div class="clientBox"> <img src="../../assets/user1.png" class="img-fluid" alt="Responsive image"></div>
-                        <p class="font-md">
-                            “ VTOR resolve's your business problem real fast with utmost quality...” </p>
-                        <p class="text-orange font-italic">- Mr. Sumit Surana</p>
-                    </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p class="mb-0  font-md pr-5">Have a software product idea but worried about the money it takes to build one? You are at the right place! </p>
+                <p class="font-lg">We can help you turn your <b>Vision</b> into <span class="text-orange font-weight-bold">Reality</span></p>
+            </div>
+            <!-- <div class="col-sm-12 col-md-2 my-3">
+                <div class="dropdown">
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
-                        <div class="font-lg font-weight-bold text-white">Restaurant Chain Owner</div>
-                        <div class="font-md text-white">Inventory and employee management System </div>
-                    </div>
-                    <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
-                        <div class="clientBox"> <img src="../../assets/user2.png" class="img-fluid" alt="Responsive image"></div>
-                        <p class="font-md">“ They understand the business scenerio and provide solution thats really effective and satisfying ”</p>
-                        <p class="text-orange font-italic">- Mrs. Neelam Shetty</p>
-                    </div>
+            </div> -->
+        </div>
+    </div>
+    <span id="product"></span>
+    <div class="home-product">
+        <div class="row product">
+            <div class="col-md-4 d-flex align-items-center mr-2">
+                <div class="textbox">
+                    <h2 class="mb-3 strikeLineProduct font-xl">Products</h2>
+                    <p class="mb-0 text-black font-md font-500 pr-7">We believe every great idea cannot be great until its implemented right</p>
                 </div>
-              </div>
+            </div>
+            <div class=" knowMoreCard d-flex align-items-center flex-column mr-3 my-3">
+               
+                    <p class="title font-md mb-1 font-weight-bold">The Nightowlers</p>
+                    <p class="content font-md text-center text-grey mb-0 ">We are revolutionalizing how Freelancing works in India.
+                        Single Stop Shop for all your freelancing needs. </p>
+                    <button type="button" (click)="btnRoute('#/home/nightOwler')" class="btn btn-grey">
+                        Know More
+                    </button>
+               
+            </div>
+            <div class=" knowMoreCard d-flex align-items-center flex-column mx-3 my-3">
+                    <p class="title font-md mb-1 font-weight-bold">Multi-Vendor Ecommerce</p>
+                    <p class="content font-md text-center text-grey mb-0 ">Plug & Play Multi-Vendor online store with 24*7 Tech Support. So, you can focus on business while we take care of your store.</p>
+                    <button type="button"  (click)="btnRoute('#/home/e-commerce')" class="btn btn-grey">
+                        Know More
+                    </button>  
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md knowMoreCard d-flex align-items-center flex-column mr-3 my-3 ml-7 mobileLeft">
+                    <p class="title font-md mb-1 font-weight-bold">E-Learning & Entertainment</p>
+                    <p class="content font-md text-center text-grey mb-0 ">Consolidated robust platform for content creators, online coaches, classes and college with a bunch of real problem solving features. </p>
+                    <button type="button" (click)="btnRoute('#/home/e-learning')" class="btn btn-grey">
+                        Know More
+                    </button>
+                </div>
+                <div class="col-md knowMoreCard d-flex align-items-center flex-column mx-3 my-3 mobileLeft">
+                    <p class="title font-md mb-1 font-weight-bold">Virtual Community</p>
+                    <p class="content font-md text-center text-grey mb-0 ">Get more connected with your community. Personalized app for your community with  feature add-ons as & when required. </p>
+                    <button type="button" (click)="btnRoute('#/home/community')" class="btn btn-grey">
+                        Know More
+                    </button>
+                </div>
+                <div class="col-md knowMoreCard d-flex align-items-center flex-column mx-3 my-3 mobileLeft">
+                    <p class="title font-md mb-1 font-weight-bold">Appointment booking system</p>
+                    <p class="content font-md text-center text-grey mb-0 ">Extremely user friendly tool for all your appointment management needs. Preferred for any business by ticketing system. </p>
+                    <button type="button" (click)="btnRoute('#/home/appointment-booking')" class="btn btn-grey">
+                        Know More
+                    </button>
+                </div>
+            </div>
+            <div class="ml-5 px-5 py-4 d-flex hideMobile"><p class="font-md text-grey ml-4 pl-5 mobilePadding"></p></div>
+    
+        </div>
+    </div>
+    <div class="workContainer"></div>
+    <div class="home-container" id="work">
+        <div class="row howWork my-5">
+            <h2 class="my-4 col-lg-12 strikeLineWork font-xl">How we work</h2>
+            <p class="col-lg-11 font-md">We follow a unique way of approaching problems and implementing solutions. We believe that anything which doesn't provide value to the business is a waste of both time and efforts. We understand and brainstorm enough before we start executing any solution.</p>
+            <div class="col-12 d-flex align-items-center flex-column">
+                <!-- <img src="../../assets/Line 1.png" class="img-fluid line1" alt="Responsive image">
+                <img src="../../assets/Line 1.png" class="img-fluid line2" alt="Responsive image">
+                <img src="../../assets/Line 3.png" class="img-fluid line3" alt="Responsive image"> -->
+                <div class="row mt-5">
+                    <div class="workBoxLine"><div class="workBox mx-3" data-toggle="tooltip" data-placement="top" title="Tooltip on top"> <img src="../../assets/bulb.png" class="pr-2" alt="Responsive image">Vision</div></div>
+                    <div class="shortWorkBoxLine"><div class="workBox mx-3"><img src="../../assets/plan.png" class="pr-2" alt="Responsive image">Plan</div></div>
+                    <div class="shortWorkBoxLine lineDown"><div class="workBox mx-3"><img src="../../assets/pen.png" class="pr-2" alt="Responsive image">Design</div></div>
+                </div>
+                <div class="row mt-5" id="client">
+                    <div class="workBoxLine"><div class="workBox mx-3"><img src="../../assets/sun.png" class="pr-2" alt="Responsive image">Reality</div></div>
+                    <div class="shortWorkBoxLine"><div class="workBox mx-3"><img src="../../assets/plane.png" class="pr-2" alt="Responsive image">Deploy</div></div>
+                    <div class="shortWorkBoxLine"><div class="workBox mx-3"><img src="../../assets/execute.png" class="pr-2" alt="Responsive image">Execute</div></div>
+                </div>
             </div>
             
-          </div>
-    </div>
-</div>
-<!-- </div> -->
-  
-<div class="team" id="team">
-    <div class="row teamBox">
-        <h2 class="mb-3 col-lg-12 strikeLineTeam font-xl">Teams</h2>
-        <div class=" col-lg-12 d-flex justify-content-center">
-            <img src="../../assets/Avatars.svg" class="img-fluid" alt="Responsive image">
+           
         </div>
     </div>
-</div>
-<div class="col-lg-12 d-flex justify-content-center py-3 teamBox mobileBox">
-    <div class="ml-5 d-flex align-items-center flex-column">
-        <p class="font-md mb-0 font-strong">Moxesh Mehta</p>
-        <p class="font-md text-orange font-weight-bold">Product Guy</p>
-        <div class="d-flex hideMobile"> 
-            <div>
-                <a href="https://www.linkedin.com/in/moxesh-mehta-a64a67147/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/moxeshmehta/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            </div> 
-            <!-- <div class="nameBox"></div> -->
+    <div class="home-container">
+        <div class="row clients my-5">
+            <h2 class="mb-3 col-lg-12 strikeLineClient font-xl">Clients</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-lg-7 backgroundImg1 d-flex justify-content-end flex-column p-5 hideMobile">
+                            <div class="font-lg font-weight-bold text-white">UnBelievable Holidays</div>
+                            <div class="font-md text-white">Inventory and employee management System </div>
+                        </div>
+                        <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
+                            <div class="clientBox"> <img src="../../assets/user1.png" class="img-fluid" alt="Responsive image"></div>
+                            <p class="font-md">“ Just like our name they did an unbelievable job really happy with the quality service by vtorlabs ”</p>
+                            <p class="text-orange font-italic">- Mr.Sanjay Mittal</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    
+                    <div class="d-flex justify-content-center">
+                        <div class="col-lg-7 backgroundImg2 d-flex justify-content-end flex-column p-5 hideMobile">
+                            <div class="font-lg font-weight-bold text-white">The Theater Project</div>
+                            <div class="font-md text-white">Inventory and employee management System </div>
+                        </div>
+                        <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
+                            <div class="clientBox"> <img src="../../assets/user1.png" class="img-fluid" alt="Responsive image"></div>
+                            <p class="font-md">
+                                “ VTOR resolve's your business problem real fast with utmost quality...” </p>
+                            <p class="text-orange font-italic">- Mr. Sumit Surana</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-lg-7 backgroundImg3 d-flex justify-content-end flex-column p-5 hideMobile">
+                            <div class="font-lg font-weight-bold text-white">Restaurant Chain Owner</div>
+                            <div class="font-md text-white">Inventory and employee management System </div>
+                        </div>
+                        <div class="col-lg-5 orange-gradient d-flex flex-column justify-content-center p-4">
+                            <div class="clientBox"> <img src="../../assets/user2.png" class="img-fluid" alt="Responsive image"></div>
+                            <p class="font-md">“ They understand the business scenerio and provide solution thats really effective and satisfying ”</p>
+                            <p class="text-orange font-italic">- Mrs. Neelam Shetty</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
     </div>
-    <div class="ml-5 mr-4 d-flex align-items-center flex-column mobileSpace">
-        <p class="font-md mb-0 font-strong">Ashish Soni</p>
-        <p class="font-md text-orange font-weight-bold">Marketeer</p>
-        <div class="d-flex hideMobile">
-            <div>
-                <a href="https://www.linkedin.com/in/ashish-soni-659697143/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+    <!-- </div> -->
+      
+    <div class="team" id="team">
+        <div class="row teamBox">
+            <h2 class="mb-3 col-lg-12 strikeLineTeam font-xl">Teams</h2>
+            <div class=" col-lg-12 d-flex justify-content-center">
+                <img src="../../assets/Avatars.svg" class="img-fluid" alt="Responsive image">
             </div>
-            <div>
-                <a href="https://www.instagram.com/ashish_2925/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <!-- <div class="nameBox"></div> -->
         </div>
     </div>
-    <div class="mr-4 ml-4 d-flex align-items-center flex-column">
-        <p class="font-md mb-0 font-strong">Abhijit Chaudhry</p>
-        <p class="font-md text-orange font-weight-bold">Tech Geek</p>
-        <div class="d-flex hideMobile">
-            <div>
-                <a href="https://www.linkedin.com/in/abhijit-chaudhry-97aa9619b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+    <div class="col-lg-12 d-flex justify-content-center py-3 teamBox mobileBox">
+        <div class="ml-5 d-flex align-items-center flex-column">
+            <p class="font-md mb-0 font-strong">Moxesh Mehta</p>
+            <p class="font-md text-orange font-weight-bold">Product Guy</p>
+            <div class="d-flex hideMobile"> 
+                <div>
+                    <a href="https://www.linkedin.com/in/moxesh-mehta-a64a67147/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/moxeshmehta/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                </div> 
+                <!-- <div class="nameBox"></div> -->
             </div>
-            <!-- <div class="nameBox"></div><div class="nameBox"></div> -->
+        </div>
+        <div class="ml-5 mr-4 d-flex align-items-center flex-column mobileSpace">
+            <p class="font-md mb-0 font-strong">Ashish Soni</p>
+            <p class="font-md text-orange font-weight-bold">Marketeer</p>
+            <div class="d-flex hideMobile">
+                <div>
+                    <a href="https://www.linkedin.com/in/ashish-soni-659697143/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/ashish_2925/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <!-- <div class="nameBox"></div> -->
+            </div>
+        </div>
+        <div class="mr-4 ml-4 d-flex align-items-center flex-column">
+            <p class="font-md mb-0 font-strong">Abhijit Chaudhry</p>
+            <p class="font-md text-orange font-weight-bold">Tech Geek</p>
+            <div class="d-flex hideMobile">
+                <div>
+                    <a href="https://www.linkedin.com/in/abhijit-chaudhry-97aa9619b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <!-- <div class="nameBox"></div><div class="nameBox"></div> -->
+            </div>
         </div>
     </div>
-</div>
+    <div id="myModal" class="modal">
 
-<app-footer></app-footer>
-
-</div>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <button class="close" id="close" (click)="closeModal()">&times;</button>
+          {{homePageComponent.MessageContent}}
+        </div>
+      
+      </div>
+    <app-footer></app-footer>
+    
+    </div>
+    

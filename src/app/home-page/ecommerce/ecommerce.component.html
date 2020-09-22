@@ -47,7 +47,8 @@
         <p class="font-lg mb-3">
           Want to see this features in <b><i>LIVE ACTION</i></b>? <br> Get your Learning business online NOW as this is the time!!
         </p>
-        <p class="font-lg mb-2">Book a demo now, <b><i>ITS FREE!!</i></b></p>
+        <p class="font-lg mb-2" *ngIf="ShowError()">{{Message}}</p>
+        <p class="font-lg mb-2" *ngIf="!ShowError()">Book a demo now, <b><i>ITS FREE!!</i></b></p>
         <div class="row btnGroup d-flex flex-row align-items-center">
           <div class="footerFields col-md-3">
             <input

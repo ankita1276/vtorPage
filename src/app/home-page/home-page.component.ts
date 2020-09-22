@@ -11,13 +11,17 @@ export class HomePageComponent implements OnInit {
   email:any;
   SelectedQuery:any;
   startIndex: number=0;
+  static MessageContent:String;
+  public homePageComponent=HomePageComponent;
   constructor(private router: Router,private service: ComponentService) { }
 
   ngOnInit(): void {
     console.log(this.router.url); 
     this.service.setShowHeader(true);
-    this.SelectedQuery="Select Your Enquiry Type";
-    this.Repeat();
+    this.email=null;
+    this.setEnquiryType('Select Enquiry type');
+
+   
   }
   setEnquiryType(type:string)
   {
@@ -25,58 +29,44 @@ export class HomePageComponent implements OnInit {
      this.SelectedQuery=type;
   }
   submit(){
-    console.log(this.email,"homeee");
+    if(this.email!=null && this.SelectedQuery==='Select Enquiry type')
+    {
     this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.email+'&EnquiryType='+this.SelectedQuery);
-    
+  HomePageComponent.setMessageContent("Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs");
+  }
+else{
+HomePageComponent.setMessageContent("Error : Please Fill All The Details Properly This Would Help In Clear Communication.");
+    }
+    document.getElementById("myModal").style.display='block';
+
+    this.delay(3000).then(any=>{
+     this.closeModal();
+     this.ngOnInit();
+ });
+
+  }
+  private newMethod() {
+    return this;
+  }
+
+  async delay(ms: number) {
+    await new Promise(resolve => setTimeout(()=>resolve(), ms)).then(()=>console.log("fired"));
+}
+  closeModal()
+  {
+    document.getElementById("myModal").style.display='none';
   }
   btnRoute(path){
     this.router.navigate([]).then(result => {  window.open(path, '_self'); });
   }
-  Repeat() {
-    setTimeout(() => {
-      this.__FunctionSlide();
-      this.Repeat();
-    }, 5000);
+  static  setMessageContent(data:String)
+  {
+    this.MessageContent=data;
+  }
+ 
+  
   }
 
-  __FunctionSlide() {
-    const slides = Array.from(document.getElementsByClassName('carousel-item'));
-    if (slides === []) {
-      this.Repeat();
-    }
-    for (const x of slides) {
-      const y = x as HTMLElement;
-      y.style.display = 'none';
-    }
-    if (this.startIndex > slides.length - 1) {
-      this.startIndex = 0;
-      const slide = slides[this.startIndex] as HTMLElement;
-      slide.style.display = 'block';
-      this.startIndex++;
-    } else {
-
-      const slide = slides[this.startIndex] as HTMLElement;
-      slide.style.display = 'block';
-      this.startIndex++;
-    }
-  }
 
   
-}
-@Component({
-  selector: 'Modal',
-  templateUrl: 'modal.html',
-  styleUrls: ['./view.component.scss'],
-})
-export class Modal {
-  constructor(
-   
-  
-  ) {}
-  confirm() {
-    
-  }
-  onNoClick(): void {
-     
-  }
-}
+

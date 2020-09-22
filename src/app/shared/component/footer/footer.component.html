@@ -63,7 +63,9 @@
     <div class="col-md-3 col-xs-12">
         <div class="form-container">
             <div class="blur-btn form-title d-flex justify-content-center">
-                <h6 class="text-white px-2 text-center font-weight-normal">Get in touch to turn your <br> <span class="font-weight-bold">Vision</span> into <span class="text-orange">Reality</span></h6>
+              <h6 *ngIf='ShowError()' class="text-white px-2 text-center font-weight-normal">{{Message}}</h6>
+          
+                <h6 *ngIf='!ShowError()' class="text-white px-2 text-center font-weight-normal">Get in touch to turn your <br> <span class="font-weight-bold">Vision</span> into <span class="text-orange">Reality</span></h6>
             </div>
             <div class="blur-btn inputField">
               <input
@@ -89,4 +91,5 @@
           </div>
         <!-- <app-detailsform></app-detailsform> -->
     </div>
+    
 </div>

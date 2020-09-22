@@ -42,6 +42,8 @@ export class BookingComponent implements OnInit {
       "title": "Event subscription",
       "paragraph": 'Our app allow users to subscibe for a recurring event if he / she wishes to by applying various available filters'
     }]
+  Message: string;
+  showError: boolean=false;
 
   constructor(private router: Router, private service: ComponentService) { }
 
@@ -50,11 +52,39 @@ export class BookingComponent implements OnInit {
     window.scrollTo(0, 0);
     this.service.setShowHeader(false);
     console.log(this.router.url); 
+    this.footerEmail=null; 
+      this.footerName=null ;
+      this.footerNumber=null;
+      this.showError=false;
   }
   submit()
   {
     console.log("abc");
+    this.showError=true;
+    if(this.footerEmail!=null &&
+      this.footerName!=null &&
+      this.footerNumber!=null)
+      {
     this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
     '&Form Type=Booking Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
+    this.Message="Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs";
+    
+    }
+    else{
+      this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
+          
+    }
+   
+    this.delay(3000).then(any=>{
+     this.ngOnInit();
+ });
+
   }
+  async delay(ms: number) {
+    await new Promise(resolve => setTimeout(()=>resolve(), ms)).then(()=>console.log("fired"));
+}
+ ShowError()
+ {
+   return this.showError;
+ }
 }

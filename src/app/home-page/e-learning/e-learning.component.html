@@ -1,5 +1,5 @@
 <app-banner [content]="content"></app-banner>
-<div class="containerBox">
+<div class="containerBox" >
   <div class="row">
     <div class="col-12">
       <h4 class="mobileText">Why is it important to get your coaching online <b><i>NOW </i></b>? This is the time, it is <b><i>NOW </i>or <i>NEVER</i></b>!!</h4>
@@ -39,8 +39,9 @@
           Want to see this features in <b><i>LIVE ACTION</i></b>? <br> Want to know how you can
           build your own multi-vendor Ecommerce Empire with us?
         </p>
-        <p class="font-lg mb-2">Book a demo now, <b><i>ITS FREE!!</i></b></p>
-        <div class="row btnGroup d-flex flex-row align-items-center">
+        <p class="font-lg mb-2" *ngIf="ShowError()">{{Message}}</p>
+        <p class="font-lg mb-2" *ngIf="!ShowError()">Book a demo now, <b><i>ITS FREE!!</i></b></p>
+         <div class="row btnGroup d-flex flex-row align-items-center">
           <div class="footerFields col-md-3">
             <input
               type="text"
@@ -74,7 +75,7 @@
           <button
           type="button"
           class="btn btn-sm btn-primaryOrange font-weight-bold text-white px-4 py-2 my-3 font-lg mobileBook"
-          onclick="submit()"
+          (click)="submit()"
         >
         Book a Free Demo
         </button>

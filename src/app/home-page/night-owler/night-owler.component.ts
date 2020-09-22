@@ -19,10 +19,7 @@ export class NightOwlerComponent implements OnInit {
         "title" : 'Visit Website',
         "style": 'btn-primaryOrange'
       },
-      {
-        "title" : 'Read More',
-        "style": 'blury-btn'
-      }
+     
     ]
   };
   constructor(private router: Router, private service: ComponentService) { }

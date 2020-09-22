@@ -12,10 +12,16 @@ export class DetailsformComponent implements OnInit {
   name: any;
   number: any;
   type:any[];
+  Message: string;
+  showError:boolean=false;
   constructor(private router: Router, private service: ComponentService) {}
 
   ngOnInit(): void {
     // console.log(this.name,this.email,this.number,this.router.url,"form");
+    this.email=null;
+    this.name=null;
+    this.number=null;
+    this.showError=false;
   }
   submit(){
     console.log(this.name,this.email,this.number,this.router.url,"form");
@@ -24,9 +30,32 @@ export class DetailsformComponent implements OnInit {
     this.type=this.router.url.split('/');
     let typeString:String=this.type[this.type.length-1];
     typeString=typeString.toUpperCase()+ " Form Page Enquiry";
-   
+    this.showError=true;
+    if(this.email!=null && this.number!=null &&  this.name!=null)
+    {
     this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.email+
     '&Form Type='+typeString+'&Name='+this.name+'&Phone Number='+this.number);
+    this.Message="Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs";
+    
+    }
+    else{
+     
+      this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
+      console.log(this.Message);
+     
+    }
+   
+    this.delay(3000).then(any=>{
+     this.ngOnInit();
+ });
+
   }
+  async delay(ms: number) {
+    await new Promise(resolve => setTimeout(()=>resolve(), ms)).then(()=>console.log("fired"));
+}
+ ShowError()
+ {
+   return this.showError;
+ }
   
 }

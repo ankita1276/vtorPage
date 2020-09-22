@@ -43,18 +43,50 @@ export class ELearningComponent implements OnInit {
       "title": "One on One Mentoring",
       "paragraph": 'Students can opt for one-on-one mentorship using our platform which allows them to chat and attend video calls within the time spam of the mentorship subscription'
     }]
-  constructor(private router: Router, private service: ComponentService) { }
-
-  ngOnInit(): void {
-    console.log(this.cardContent,"cardContent");
-    window.scrollTo(0, 0);
-    this.service.setShowHeader(false);
-    console.log(this.router.url); 
+    Message: string;
+    showError: boolean=false;
+  
+    constructor(private router: Router, private service: ComponentService) { }
+  
+    ngOnInit(): void {
+      console.log(this.cardContent,"cardContent");
+      window.scrollTo(0, 0);
+      this.service.setShowHeader(false);
+      console.log(this.router.url); 
+      this.footerEmail=null; 
+        this.footerName=null ;
+        this.footerNumber=null;
+        this.showError=false;
+    }
+    submit()
+    {
+      console.log("abc");
+      this.showError=true;
+      if(this.footerEmail!=null &&
+        this.footerName!=null &&
+        this.footerNumber!=null)
+        {
+      this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
+      '&Form Type=E-Learning Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
+      this.Message="Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs";
+      
+      }
+      else{
+        
+        this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
+        
+      }
+     
+      this.delay(3000).then(any=>{
+       this.ngOnInit();
+   });
+  
+    }
+    async delay(ms: number) {
+      await new Promise(resolve => setTimeout(()=>resolve(), ms)).then(()=>console.log("fired"));
   }
-  submit()
-  {
-    this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
-    '&Form Type=ELearning Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
-  }
-
+   ShowError()
+   {
+     return this.showError;
+   }
 }

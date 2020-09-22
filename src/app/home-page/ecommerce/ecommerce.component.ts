@@ -36,23 +36,56 @@ export class EcommerceComponent implements OnInit {
       "title": 'Cross-Platform Mobile App for Vendors to maintain product catalogues and orders',
       "paragraph": 'Vendors will be able to register and submit the required documents and create their own product catalogue they want to share to a particular regoin. Also, manage arriving orders and assign delivery partner'
     }, {
-      "title": "Delivery Partner App",
-      "paragraph": 'Allows delivery partner to process th delivery and open the buyer location in Maps for easy navigation. Also, offers to accept COD payments'
+      "title": "Super Easy MultiLingual Delivery Partner App",
+      "paragraph": 'Allows delivery partner to process th delivery and open the buyer location in Maps for easy navigation. Also, offers to accept COD payments                                                                '
     }, {
       "title": "Suppier verification and ratings system and detailed dashboarding",
       "paragraph": 'Vendor administration and approval process and dashboard which provides overview and detailed reporting of sales made by individual vendors and individual service areas business in coming from'
     }]
-  constructor(private router: Router, private service: ComponentService) { }
-
-  ngOnInit(): void {
-    console.log(this.cardContent,"cardContent");
-    window.scrollTo(0, 0);
-    this.service.setShowHeader(false);
-    console.log(this.router.url); 
+    Message: string;
+    showError: boolean=false;
+  
+    constructor(private router: Router, private service: ComponentService) { }
+  
+    ngOnInit(): void {
+      console.log(this.cardContent,"cardContent");
+      window.scrollTo(0, 0);
+      this.service.setShowHeader(false);
+      console.log(this.router.url); 
+      this.footerEmail=null; 
+        this.footerName=null ;
+        this.footerNumber=null;
+        this.showError=false;
+    }
+    submit()
+    {
+      console.log("abc");
+      this.showError=true;
+      if(this.footerEmail!=null &&
+        this.footerName!=null &&
+        this.footerNumber!=null)
+        {
+      this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
+      '&Form Type=ECommerce Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
+      this.Message="Thank You For Reaching Us !! Our Representative Will Contact You Within 24 Hrs";
+      
+      }
+      else{
+        
+          this.Message="Error : Please Fill All The Details Properly This Would Help In Clear Communication.  ";
+        
+      }
+     
+      this.delay(3000).then(any=>{
+       this.ngOnInit();
+   });
+  
+    }
+    async delay(ms: number) {
+      await new Promise(resolve => setTimeout(()=>resolve(), ms)).then(()=>console.log("fired"));
   }
-submit()
-{
-  this.service.sendPostRequest('?DateTime='+new Date().toJSON("yyyy/MM/dd__HH:mm")+'&Email='+this.footerEmail+
-  '&Form Type=ECommerce Form Page Enquiry&Name='+this.footerName+'&Phone Number='+this.footerNumber);
-}
+   ShowError()
+   {
+     return this.showError;
+   }
 }

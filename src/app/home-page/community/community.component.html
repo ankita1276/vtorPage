@@ -1,5 +1,5 @@
 <app-banner [content]="content"></app-banner>
-<div class="containerBox">
+<div class="containerBox" >
   <div class="row">
     <div class="col-12">
       <h4 class="">
@@ -34,7 +34,8 @@
         <p class="font-lg mb-3">
           Want to see this features in <b><i>LIVE ACTION</i></b>? <br> Tired of Managing online communities over social media platforms ? 
         </p>
-        <p class="font-lg mb-2">Book a demo now, <b><i>ITS FREE!!</i></b></p>
+        <p class="font-lg mb-2" *ngIf="ShowError()">{{Message}}</p>
+        <p class="font-lg mb-2" *ngIf="!ShowError()">Book a demo now, <b><i>ITS FREE!!</i></b></p>
         <div class="row btnGroup d-flex flex-row align-items-center">
           <div class="footerFields col-md-3">
             <input
@@ -69,7 +70,7 @@
           <button
           type="button"
           class="btn btn-sm btn-primaryOrange font-weight-bold text-white px-4 py-2 my-3 font-lg mobileBook"
-          onclick="submit()"
+          (click)="submit()"
         >
         Book a Free Demo
         </button>

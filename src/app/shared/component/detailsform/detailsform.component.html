@@ -1,6 +1,7 @@
 <div class="form-container">
   <div class="blur-btn form-title d-flex justify-content-center wantToKnow">
-    <p class="mb-0 font-18 ">Want to know what we have to offer?<br><span class="pl-3">Book a demo now,<b> ITS FREE!</b> </span></p>
+    <p class="mb-0 font-18 " *ngIf="ShowError()">{{Message}}</p>
+       <p class="mb-0 font-18 " *ngIf="!ShowError()">Want to know what we have to offer?<br><span class="pl-3">Book a demo now,<b> ITS FREE!</b> </span></p>
   </div>
   <div class="blur-btn inputField">
     <input
