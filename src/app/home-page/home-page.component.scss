@@ -150,14 +150,17 @@
   .backgroundImg1 {
     background: url("../../assets/theatre.jpg");
     height: 330px;
+    background-size: cover !important;
   }
   .backgroundImg2 {
     background: url("../../assets/theatre.jpg");
     height: 330px;
+    background-size: cover !important;
   }
   .backgroundImg3 {
     background: url("../../assets/theatre.jpg");
     height: 330px;
+    background-size: cover !important;
   }
   .clientBox {
     width: 100px;
@@ -561,5 +564,20 @@ h2.strikeLineClient {
   }
   .orange-gradient{
     min-height: 300px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .ml-7 {
+    margin-left: 26rem !important;
+  }
+  .product{
+    margin-top: 30rem;
+  }
+  .darkProductVector{
+    top: 1071px !important;
+  }
+  .productVector{
+    left: 133.62px;
+    top: 1064.61px !important;
   }
 }
