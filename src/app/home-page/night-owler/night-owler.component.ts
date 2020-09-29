@@ -15,11 +15,14 @@ export class NightOwlerComponent implements OnInit {
     "subQuestion": 'Wanna Know How ?',
     "getDetailsForm": false,
     "button": [
+      // {
+      //   "title" : 'Visit Website',
+      //   "style": 'btn-primaryOrange'
+      // },
       {
-        "title" : 'Visit Website',
-        "style": 'btn-primaryOrange'
-      },
-     
+        "title" : 'Read More',
+        "style": 'blury-btn'
+      }
     ]
   };
   constructor(private router: Router, private service: ComponentService) { }
