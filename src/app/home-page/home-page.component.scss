@@ -148,19 +148,22 @@
 }
 .clients {
   .backgroundImg1 {
-    background: url("../../assets/theatre.jpg");
+    background: url("../../assets/holiday.jpg");
     height: 330px;
     background-size: cover !important;
+    box-shadow:inset -85px -220px 0 -85px rgba(55, 55, 55, 0.6);
   }
   .backgroundImg2 {
     background: url("../../assets/theatre.jpg");
     height: 330px;
     background-size: cover !important;
+    box-shadow:inset -85px -220px 0 -85px rgba(55, 55, 55, 0.6);
   }
   .backgroundImg3 {
-    background: url("../../assets/theatre.jpg");
+    background: url("../../assets/restaurant.jpg");
     height: 330px;
     background-size: cover !important;
+    box-shadow:inset -85px -220px 0 -85px rgba(55, 55, 55, 0.6);
   }
   .clientBox {
     width: 100px;
